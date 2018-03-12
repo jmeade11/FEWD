@@ -54,25 +54,15 @@ For the first assignment, you will begin creating the beginnings of your first w
 
 ### Resources
 
-- NOTE: There is **no starter code** for this assignment (only starter text), but a **sample** solution is [provided](solution).  Students will build this assignment from scratch and should feel free to get creative with regard to layout, color, styling, etc.
-
-- Slides from [class 1](../01_html_basics/slides.md) and [class 2](../02_css_basics/slides.md).
+- NOTE: There is **no starter code** for this assignment (only starter text).  You'll build this assignment from scratch and should feel free to get creative with regard to layout, color, styling, etc.
 
 Here are examples of a simple "About" and "Portfolio" page that fulfill the assignment requirements:
 
 - Joe, the freelance developer's "about page":
 
-![Joe's About](solution/images/about_me_deliverable.png)
+![Joe's About](images/about_me_deliverable.png)
 
 - Joe, the freelance developer's "portfolio page":
 
-![Joe's Portfolio](solution/images/portfolio_deliverable.png)
+![Joe's Portfolio](images/portfolio_deliverable.png)
 
-
-<br>
-
----
-
-### Evaluation / Submission
-
-Students will create a new repository on GitHub called "homework-portfolio" and push their code to this new repository when they are ready to submit. The instructional team will grade each technical requirement and provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2).  The maximum possible score on this assignment is 16/16. 
