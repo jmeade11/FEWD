@@ -3,21 +3,15 @@ FEWD Class 2 Materials
 
 ## What's here?
 
-### Class Code Examples
 ### Slides from the lecture
 
 ## Homework
 
-Work on completing your portfolio and about pages.  These will be submitted next class.
+You've learned a lot in a very short period.  You should be proud of that.  
 
-1. Add your own profile image.
-2. There is a property that creates rounded corners (search for border-radius).  Add some rounded corners to your profile image.  As a **bonus**, see if you can add a solid colored border and a drop-shadow. 
-3. Use the `<nav>` and `<main>` and `<footer>` tags. 
-4. Use the `text-transform` property on your subheadings to make them display the text as uppercase.
-5. Make sure to use at least one combinator.
-6. Add the normalize CSS reset found here: https://necolas.github.io/normalize.css/8.0.0/normalize.css  
+Take what you've learned and complete the 2 additional layouts for the Marketing with Nav and Magazine style.  There's no starter code, just what you come up with to layout these two designs.
 
-Read this article on collapsing margins: [https://www.sitepoint.com/collapsing-margins/](https://www.sitepoint.com/collapsing-margins/)
+Next class, we'll be learning about positioning and with that we'll start working from some actual design files, that you will reproduce! An example image of one such design is in the folder with the layout images.  If you're feeling industrious, go ahead and try your hand at laying out the design!
 
 ## Don't forget your eval!
 
