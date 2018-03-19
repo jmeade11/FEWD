@@ -1,54 +1,38 @@
 html {
   background-color: lightgray;
+  padding: 0;
+  margin-top: 0;
+  margin: 0;
+  border: none;
 }
 
 body {
-  background-color: salmon;
+  height: 100vh;
+  padding: 0;
+  margin-top: 0;
+  margin: 0;
+  border: none;
 }
 
-section {
+div.first {
+  background-color: blue;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 0;
+  margin: 0;
+  border: none;
 }
 
 div {
   background-color: hotpink;
-}
-
-p {
-  background-color: red;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
-div {
-  width: 160px;
-  height: 80px;
-  padding: 20px;
-  border: 8px solid red;
-  background: yellow;
-}
-
-.content-box {
-  box-sizing: content-box;
-     Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
-     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
-     Content box width: 160px
-     Content box height: 80px
-}
-
-.border-box {
+  height:10vh;
+  width: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin: 0;
+  border: none;
   box-sizing: border-box;
-  Total width: 160px
-     Total height: 80px
-     Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
-     Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px
+  display: inline-block;
 }
-*/
+

@@ -11,3 +11,13 @@ p {
 #p1, #p2 {
   background-color: orange;
 }
+
+p#p1.special {
+  background-color: purple;
+  color: white;
+}
+
+#p1.special {
+  background-color: green;
+  color: white;
+}

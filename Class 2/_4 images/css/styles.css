@@ -3,5 +3,10 @@ img {
 }
 
 div {
-  background-image: url("../images/dogs.jpg");
+  height: 100vh;
+  background-color:#BD1804;
+  background-image: url("../images/marketing-icon.png#E73506");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
