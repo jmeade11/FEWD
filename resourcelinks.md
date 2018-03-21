@@ -18,7 +18,7 @@
 [MDN](https://developer.mozilla.org/en-US/) is the Mozilla Developer Network.  It's a highly trusted resource that covers the actual implementation (not necessarily how they were *intended* to be implemented) of the open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.
 
 ### W3C
-[W3c](https://www.w3.org/), the World Wide Web Consortium, is the main international standards organization for the World Wide Web.
+[W3C](https://www.w3.org/), the World Wide Web Consortium, is the main international standards organization for the World Wide Web.
 
 
 
