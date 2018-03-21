@@ -10,7 +10,7 @@ This is a running list of some tools that will help you be more productive, effi
 To add Emmet support to Sublime Text, first you'll need to install [Package Control](https://packagecontrol.io).  Package Control makes it possible to easily find and install hundreds of plugins for Sublime Text.  
 
 1. Follow the instructions [here](https://packagecontrol.io/installation) to install Package Control.
-2. Once Package Control is installed (exit and restart Sublime Text after installation), launch the Package Control by choosing **Sublime Text > Preferences > Package Control** or with the keyboard shortcut ⌘ (command) + ⇧ (shift) + P.
+2. Once Package Control is installed (exit and restart Sublime Text after installation), launch the Package Control by choosing **Sublime Text > Preferences > Package Control** or with the keyboard shortcut <kbd>⌘</kbd> (command) + <kbd>⇧</kbd> (shift) + P.
 3. When the dialog launches, begin typing `install` to jump to the **Package Control: Install Package** option.  
 4. Select the install package option to launch the dialog list of available packages.  Start typing `emmet` to jump to the Emmet package.
 5. Select Emmet and follow any onscreen instructions to install it.
@@ -96,3 +96,6 @@ The `*` following the `li` tells Emmet to wrap the lines individually from that 
 
 ##### Creating a Stylesheet Link with link:css
 This is a quick way to create a link to an external stylesheet.  Just type `link:css` and press the <kbd>Tab ↹</kbd> key.  Be weary of getting to lazy and forgetting how this basic tag is structured. :wink:
+
+##### Rename a Tag
+Swapping out one tag for another can be a pain, but with Emmet, you just put your cursor inside of the tag you want to change.  Next, press <kbd>⇧</kbd> + <kbd>⌘</kbd> + K and type the new tag name.  As you type Emmet will update the start and end tags simultaneously.
