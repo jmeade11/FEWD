@@ -1,4 +1,3 @@
-
 # Tools of the trade
 This is a running list of some tools that will help you be more productive, efficient and/or accurate.
 
@@ -7,7 +6,7 @@ This is a running list of some tools that will help you be more productive, effi
 ## Emmet
 
 ### Installing Emmet
-To add Emmet support to Sublime Text, first you'll need to install [Package Control](https://packagecontrol.io).  Package Control makes it possible to easily find and install hundreds of plugins for Sublime Text.  
+To add Emmet support to Sublime Text, you'll need to install [Package Control](https://packagecontrol.io) first.  Package Control makes it possible to easily find and install hundreds of plugins for Sublime Text.  
 
 1. Follow the instructions [here](https://packagecontrol.io/installation) to install Package Control.
 2. Once Package Control is installed (exit and restart Sublime Text after installation), launch the Package Control by choosing **Sublime Text > Preferences > Package Control** or with the keyboard shortcut <kbd>⌘</kbd> (command) + <kbd>⇧</kbd> (shift) + P.
@@ -29,7 +28,7 @@ You can also create multiple lines of nested tags with the `>`.  If you wanted t
     </div>
 
 #### Sibling Tags with +
-To create multiple sibling tags, you use the `+`.  For example, if you wanted to create a basic structure for your page body, you might type: `header+main+footer`.  When you press the <kbd>Tab ↹</kbd> key, the follow code would be produced.
+To create multiple sibling tags, you use the `+`.  For example, if you wanted to create a basic structure for your page body, you might type: `header+main+footer`.  When you press the <kbd>Tab ↹</kbd> key, the following code would be produced.
 
     <header></header>
     <main></main>
@@ -95,7 +94,7 @@ Select the text and press <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>ENTER</kbd> or <k
 The `*` following the `li` tells Emmet to wrap the lines individually from that point forward. 
 
 ##### Creating a Stylesheet Link with link:css
-This is a quick way to create a link to an external stylesheet.  Just type `link:css` and press the <kbd>Tab ↹</kbd> key.  Be weary of getting to lazy and forgetting how this basic tag is structured. :wink:
+This is a quick way to create a link to an external stylesheet.  Just type `link:css` and press the <kbd>Tab ↹</kbd> key.  Be wary of getting to lazy and forgetting how this basic tag is structured. :wink:
 
 ##### Rename a Tag with <kbd>⇧</kbd> + <kbd>⌘</kbd> + K 
 Swapping out one tag for another can be a pain, but with Emmet, you just put your cursor inside of the tag you want to change.  Next, press <kbd>⇧</kbd> (shift) + <kbd>⌘</kbd> (command) + K and type the new tag name.  As you type Emmet will update the start and end tags simultaneously.
