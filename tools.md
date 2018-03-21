@@ -73,7 +73,7 @@ You can specifically add your own attributes or override the default ones by pla
 Emmet includes **a lot** of shortcuts and features.  Here are some of my favorites:
 
 ##### Toggle Comments with <kbd>⌘</kbd> + <kbd>⌥</kbd> + /
-Very often you'll need to comment some code out when you're trying to isolate a problem while debugging issues.  Emmet makes this super easy.  Just select the code that you want to comment out and type: <kbd>⌘</kbd> (command) + <kbd>⌥</kbd> (alt/option) + /.
+Very often you'll need to comment some code out when you're trying to isolate a problem while debugging issues.  Emmet makes this super easy.  Just select the code that you want to comment out and type: <kbd>⌘</kbd> (command) + <kbd>⌥</kbd> (alt/option) + /.  Uncomment the same way.
 
 ##### Wrap with Abbreviations with <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>ENTER</kbd> or <kbd>^</kbd> + W
 You've seen me use this in class a lot.  It's extremely helpful for wrapping lists of text.  For example, if you have a list of text that you want to turn into a set of links, such as:
@@ -99,3 +99,9 @@ This is a quick way to create a link to an external stylesheet.  Just type `link
 
 ##### Rename a Tag with <kbd>⇧</kbd> + <kbd>⌘</kbd> + K 
 Swapping out one tag for another can be a pain, but with Emmet, you just put your cursor inside of the tag you want to change.  Next, press <kbd>⇧</kbd> (shift) + <kbd>⌘</kbd> (command) + K and type the new tag name.  As you type Emmet will update the start and end tags simultaneously.
+
+##### Go To Next Edit Point with <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>→</kbd>
+The key combination <kbd>^</kbd> (control) + <kbd>⌥</kbd> (alt/option) + <kbd>→</kbd> (right) will jump you to the next point in your code where you can enter a value or content.
+
+##### Go To Previous Edit Point with <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>←</kbd>
+The key combination <kbd>^</kbd> (control) + <kbd>⌥</kbd> (alt/option) + <kbd>→</kbd> (left) will jump you to the previous point in your code where you can enter a value or content.
