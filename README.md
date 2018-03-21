@@ -11,3 +11,4 @@ FEWD Class Materials
   - [Tools of the Trade](https://github.com/jmeade11/FEWD/wiki#tools-of-the-trade)
     - [Sublime Text3](https://github.com/jmeade11/FEWD/wiki/Sublime)
     - [Emmet](https://github.com/jmeade11/FEWD/wiki/Emmet)
+  - [Games](https://github.com/jmeade11/FEWD/wiki/Games)
