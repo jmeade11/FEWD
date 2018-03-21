@@ -8,5 +8,5 @@ FEWD Class Materials
 - Homework Materials
 - [Wiki](https://github.com/jmeade11/FEWD/wiki)
   - [Helpful Resources](https://github.com/jmeade11/FEWD/wiki#resources)
-  - Tools of the Trade
+  - [Tools of the Trade](https://github.com/jmeade11/FEWD/wiki#tools-of-the-trade)
     - [Emmet](https://github.com/jmeade11/FEWD/wiki/Emmet)
