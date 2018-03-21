@@ -97,5 +97,5 @@ The `*` following the `li` tells Emmet to wrap the lines individually from that 
 ##### Creating a Stylesheet Link with link:css
 This is a quick way to create a link to an external stylesheet.  Just type `link:css` and press the <kbd>Tab ↹</kbd> key.  Be weary of getting to lazy and forgetting how this basic tag is structured. :wink:
 
-##### Rename a Tag
-Swapping out one tag for another can be a pain, but with Emmet, you just put your cursor inside of the tag you want to change.  Next, press <kbd>⇧</kbd> + <kbd>⌘</kbd> + K and type the new tag name.  As you type Emmet will update the start and end tags simultaneously.
+##### Rename a Tag with <kbd>⇧</kbd> + <kbd>⌘</kbd> + K 
+Swapping out one tag for another can be a pain, but with Emmet, you just put your cursor inside of the tag you want to change.  Next, press <kbd>⇧</kbd> (shift) + <kbd>⌘</kbd> (command) + K and type the new tag name.  As you type Emmet will update the start and end tags simultaneously.
