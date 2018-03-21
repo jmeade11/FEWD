@@ -73,10 +73,10 @@ You can specifically add your own attributes or override the default ones by pla
 Emmet includes **a lot** of shortcuts and features.  Here are some of my favorites:
 
 ##### Toggle Comments with <kbd>⌘</kbd> + <kbd>⌥</kbd> + /
-Very often you'll need to comment some code out when you're trying to isolate a problem when you're debugging issues.  Emmet makes this super easy.  Just select the code that you want to comment out and type: <kbd>⌘</kbd> (command) + <kbd>⌥</kbd> (alt/option) + /.
+Very often you'll need to comment some code out when you're trying to isolate a problem while debugging issues.  Emmet makes this super easy.  Just select the code that you want to comment out and type: <kbd>⌘</kbd> (command) + <kbd>⌥</kbd> (alt/option) + /.
 
 ##### Wrap with Abbreviations with <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>ENTER</kbd> or <kbd>^</kbd> + W
-You've seen me use this in class a lot.  It's extremely helpful for wrapping lists of text.  For example, if you have a list of text that you want to wrap in a nav with an unordered list and anchor tags, such as:
+You've seen me use this in class a lot.  It's extremely helpful for wrapping lists of text.  For example, if you have a list of text that you want to turn into a set of links, such as:
 
     Facebook
     Twitter
