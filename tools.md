@@ -72,13 +72,27 @@ You can specifically add your own attributes or override the default ones by pla
 #### Some Helpful Shortcuts
 Emmet includes **a lot** of shortcuts and features.  Here are some of my favorites:
 
-##### Toggle Comments with ⌘ + ⌥ + /
-Very often you'll need to comment some code out when you're trying to isolate a problem when you're debugging issues.  Emmet makes this super easy.  Just select the code that you want to comment out and type: ⌘ (command) + ⌥ (alt/option) + /.
+##### Toggle Comments with <kbd>⌘</kbd> + <kbd>⌥</kbd> + /
+Very often you'll need to comment some code out when you're trying to isolate a problem when you're debugging issues.  Emmet makes this super easy.  Just select the code that you want to comment out and type: <kbd>⌘</kbd> (command) + <kbd>⌥</kbd> (alt/option) + /.
 
-##### Wrap with Abbreviations with ^ + ⌥ + <kbd>ENTER</kbd> or ^ + W
-You've seen me use this in class a lot.  It's extremely helpful for 
+##### Wrap with Abbreviations with <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>ENTER</kbd> or <kbd>^</kbd> + W
+You've seen me use this in class a lot.  It's extremely helpful for wrapping lists of text.  For example, if you have a list of text that you want to wrap in a nav with an unordered list and anchor tags, such as:
 
-##### Creating a Stylesheet Link
+    Facebook
+    Twitter
+    Instagram
 
+Select the text and press <kbd>^</kbd> + <kbd>⌥</kbd> + <kbd>ENTER</kbd> or <kbd>^</kbd> + W.  At the bottom of the screen, you'll see it reads "Enter Wrap Abbreviation" with a field to the right.  Just type the tags you want to wrap the list in, for example: `nav>ul>li*>a` would produce:
 
-link:css	:	Link stylesheet
+    <nav>
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+    </nav>
+    
+The `*` following the `li` tells Emmet to wrap the lines individually from that point forward. 
+
+##### Creating a Stylesheet Link with link:css
+This is a quick way to create a link to an external stylesheet.  Just type `link:css` and press the <kbd>Tab ↹</kbd> key.  Be weary of getting to lazy and forgetting how this basic tag is structured. :wink:
