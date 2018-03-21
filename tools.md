@@ -19,10 +19,10 @@ You may have to restart Sublime Text to begin using Emmet.
 
 ### Using Emmet 
 #### Basic Usage
-Emmet is activated with the <kbd>Tab ↹</kbd> key by default.  Open and **save a new file with the html extension** (Emmet needs to know what kind of a file it is so it can make the correct insertions and suggestions).  Type `div` and then press the <kbd>Tab ↹</kbd> key.  Emmet will replace div with `<div></div>` and insert the cursor automatically between the start and end tags.
+Emmet is activated with the <kbd>Tab ↹</kbd> key by default.  Open and **save a new file with the html extension** (Emmet needs to know what kind of a file it is so it can make the correct insertions and suggestions).  Type `div` and then press the <kbd>Tab ↹</kbd> key.  Emmet will replace what you typed with `<div></div>` and insert the cursor automatically between the start and end tags.
 
 #### Nested Tags with >
-You can also create multiple lines of nested tags with the `>`.  If you wanted to create an div tag that contains a paragraph tag, you would type: `div>p` with no spaces, then press the <kbd>Tab ↹</kbd> key. In this case, Emmet would replace the text with:
+You can also create multiple lines of nested tags with the `>`.  If you wanted to create a div tag that contains a paragraph tag, you would type: `div>p` with no spaces, then press the <kbd>Tab ↹</kbd> key. In this case, Emmet would replace the text with:
 
     <div>
         <p></p>
