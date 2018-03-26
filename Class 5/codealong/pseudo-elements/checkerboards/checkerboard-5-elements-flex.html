@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkerboard: Five Elements</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    div {
+      display: flex;
+      height: 300px;
+      width: 300px;
+      background-color: black;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    div>div {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+    }
+
+    div>div:nth-child(3n + 1) {
+      margin:0 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

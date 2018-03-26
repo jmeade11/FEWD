@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkerboard: Three Elements</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    div {
+      height: 100px;
+      width: 300px;
+      background-color: black;
+      position: relative;
+    }
+
+    div::after {
+      content: '';
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      top:0;
+      left:0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    div:nth-child(even) {
+      background-color: red;
+    }
+
+    div:nth-child(even)::after {
+      background-color: black;
+    }
+
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>

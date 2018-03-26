@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Permanent+Marker');
+
+:root {
+  --ga-red: #ee203b;
+}
+
+i.flag::before {
+  content:'\01F6A9';
+  font-style: normal;
+}
+
+i.poop::before {
+  content:'\01F4A9';
+  font-style: normal;
+}
+
+.reveal div.row {
+  display: flex;
+  align-items: center;
+  margin: 0 -10px;
+}
+
+.reveal div.col-2 {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.top {
+  align-self: flex-start;
+}
+
+#logo {
+  height: 20vh;
+  width: 20vh;
+}
+
+.reveal {
+  padding: 0;
+}
+
+.reveal ol, .reveal dl, .reveal ul {
+  display: block;
+}
+
+.reveal section img {
+  margin: 15px 0px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  max-width: 100%;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, p {
+  text-transform: none;
+  text-align: left;
+  font-weight: bold;
+}
+
+.reveal h1 {
+  font-size: 3.5em;
+}
+
+.reveal section.divider {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reveal section.divider h2 {
+  text-align: center;
+}
+.reveal .center-h {
+  text-align: center;
+}
+.reveal .slides > section.no-title, .reveal .slides > section.no-title > section.no-title {
+  padding-top: 150px;
+}
+
+.reveal pre {
+  width: 100%;
+}
+
+.reveal pre code {
+  padding: 4px 20px;
+}
+
+.reveal code:not(.hljs) {
+  background-color: #3f3f3f;
+  color: #efef8f;
+  padding: 0 8px;
+}
+
+.hello {
+  transform: rotate(-5deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.hello img {
+  height: 450px;
+}
+.hello p {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Permanent Marker';
+}
+
+.no-title img {
+  height: 50vh;
+}
+
+.mh75 {
+  max-height: 75vh !important;
+}
+
+.mh50 {
+  max-height: 50vh !important;
+}
+
+.circle {
+  display: inline-block;
+  color: white;
+  background-color: var(--ga-red);
+  padding: .3em;
+  border-radius: 50%;
+}
+
+p.note {
+  font-size: .75em;
+}
+
+p.note strong {
+  color: var(--ga-red);
+}
+
+/* Box Model Example */
+
+div.content, div.border {
+  height: 100px;
+  width: 100px;
+  background-color: var(--ga-red);
+  padding: 20px;
+  outline: 20px solid lightgray;
+  border: 20px solid darkgray;
+  margin: 20px auto;
+  box-sizing: content-box;
+  background-clip: content-box;
+  position: relative;
+  color: white;
+  font-size: .4em;
+  text-align: center;
+}
+
+div.border {
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+div.content::before, div.border::before {
+  content: 'padding';
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: gray;
+  z-index: -1;
+}
+
+div.content::after, div.border::after {
+  content: 'border';
+  position: absolute;
+  top:-20px;
+  left:0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Box Model End */
+
+.center {
+  text-align: center !important;
+}
+
+ul.wrap-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 0;
+  max-height: 50vh;
+}
+
+ul.wrap-list > li {
+  display: inline-block;
+  font-size: .55em;
+  width: 50%;
+}
+
+/* Block Example */
+div.block-example {
+  height: 100px;
+  width: 50%;
+  background-color: var(--ga-red);
+  border: 2px solid rgba(0,0,0,.25);
+  color: white;
+  position: relative;
+  font-size: .8em;
+  line-height: 100px;
+}
+div.block-example::before {
+  content: 'blocked area';
+  background: repeating-linear-gradient(
+  -55deg, #222, #222 10px, #333 10px, #333 20px);
+  position: absolute;
+  top: -2px;
+  right:-100%;
+  bottom: -2px;
+  left: 100%;
+  z-index: -1;
+  opacity: .25;
+  color: gray;
+  line-height: 100px;
+}
+
+/* Inline Example */
+span.inline {
+  background-color: var(--ga-red);
+  height: 100px;
+  width: 25%;
+  color: white;
+}
+
+.reveal figure {
+  font-size: 50%;
+  text-align: left;
+}
+
+.reveal figure pre {
+  box-shadow: none;
+}
+
+.reveal figcaption cite a {
+  font-style: italic;
+}
+
+.reveal table {
+  font-size: 50%;
+}
+
+.reveal table td {
+  padding: 10px 8px;
+}
+
+.reveal table tfoot tr {
+  border-top: 2px solid darkgray;
+  background-color: lightgray;
+  font-style: italic;
+}
+
+.reveal div.container-ex {
+  width: 100%;
+  padding: 0 15px;
+  background-color: gray;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.reveal div.container-ex, .reveal div.row-ex::before {
+    display: table;
+    content: " ";
+}
+
+.reveal div.row-ex {
+  width: 100%;
+  padding: 0 -15px;
+  background-color: yellow;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.row-ex .row-title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.reveal div.col-ex {
+  width: 50%;
+  padding: 0 15px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: orange;
+  text-align: center;
+  float: left;
+  border: 1px dashed blue;
+}
+
+.reveal div.col-ex + div.col-ex {
+  border-left: none;
+}
+
+

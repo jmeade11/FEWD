@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo Elements</title>
+  <style>
+    i.poop::before {
+      content:'\01F4A9';
+      font-style: normal;
+      font-size: 5em;
+    }
+
+    i.wink::before {
+      content:'\01F609';
+      font-style: normal;
+      font-size: 5em;
+    }
+    span.circle {
+      position: relative;
+      color: white;
+      line-height: 3em;
+      width: 3em;
+      text-align: center;
+      display: inline-block;
+    }
+    span.circle::before {
+      content:'';
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <i class="poop"></i>
+  <i class="wink"></i>
+  <p><span class="circle">17</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro reiciendis excepturi quos ipsa totam quidem, distinctio dolorem, amet iste quia aspernatur quisquam molestias magni doloribus qui, facilis at tenetur et.</p>
+
+</body>
+</html>
