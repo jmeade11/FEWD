@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    .row {
+      width: 100%;
+      padding: 0 -15px;
+    }
+
+    .col {
+      padding: 0 15px;
+      float: left;
+      background-color: gray;
+    }
+
+    .col-25 {
+      width: 25%;
+    }
+
+    .col-50 {
+      width: 50%;
+    }
+
+
+    .container::before,
+    .row::before {
+      content: '';
+      display: table;
+    }
+
+    div {
+      color: orange;
+    }
+
+    @media (max-width: 768px) {
+
+      .col-25, .col-50 {
+        width: 100%;
+      }
+      .col {
+        background-color: red;
+      }
+      div {
+        color: white;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-25 col">
+        <div class="row">
+          <div class="col col-50">Inside</div>
+          <div class="col col-50">Inside</div>
+        </div>
+      </div>
+      <div class="col-25 col">Two
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel blanditiis, at molestias alias rem! Cum fuga, ducimus possimus autem at et sit fugit voluptates minus quisquam atque, dignissimos doloremque totam?
+      </div>
+      <div class="col-25 col">Three Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint quod incidunt suscipit eligendi, culpa cum nisi eius perspiciatis a libero, vel voluptatibus blanditiis fugit laboriosam veritatis, aspernatur recusandae voluptates.</div>
+      <div class="col-25 col">Four Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, modi. Atque numquam reprehenderit quam aut itaque sunt accusantium illum quasi ut cumque, molestias asperiores minus fugit rerum. Aut, perferendis, praesentium!</div>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+</body>
+</html>
