@@ -1,0 +1,223 @@
+/* Relaxr Styles Week 3 */
+
+/* This file adds a custom grid and uses the :root
+   pseudo-class to create a set of color variables to
+   making using colors easier and consistent */
+
+/*  Instead of having multiple linked css files
+    and thus, multiple calls to the server, we're using
+    the @import statement to import the css file for our
+    Google font directly into our base page styles.
+    Now we can use these fonts anywhere in our site, and
+    if we change our mind and want to use a different one
+    we only need to update the link in one place. */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100i,300,700");
+
+ /* The :root selector allows you to target the
+    highest-level "parent" element in the DOM.
+    In html it targets the html element, but it
+    has even greater specificity (because it's a
+    pseudo class).
+
+    We have used the css custom property to create
+    a set of colors that we can now call with the
+    variable syntax throughout our document.  That
+    will make it easier to reference the same colors
+    throughout the document without having to remember
+    the hexadecimal values.
+
+    Also, I've create a custom property for the base
+    width of 1 grid unit (i.e., 100% divided by 12) to
+    use in setting the width of our column classes.
+
+    WARNING: CSS variables (custom properties) are
+    not supported before IE Edge (so no versions of IE
+    before October 2017 */
+
+
+:root {
+  --r-lightgray: #f0efef;
+  --r-yellow: #f9e42e;
+  --r-bright-yellow: #f5f82e;
+  --r-darkblue: #033048;
+  --r-gray: #606161;
+  --r-black: #121212;
+  --r-grid-unit: calc(100% / 12);
+}
+
+/*  The universal selector (*) is used to apply some
+    styles universally throughout our project. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*  Rather than apply the font properties universally
+    we're setting these on the html element to allow
+    them to be inherited where appropriate.  We could
+    have added this declarations to the :root rules
+    as well. */
+
+html {
+  background-color: var(--r-lightgray);
+  font: 300 18px Lato, Helvetica, sans-serif;
+}
+
+button {
+  padding: .75rem 1.1rem;
+  margin: 0 auto;
+  font-size: 1.25em;
+  border-radius: .5rem;
+  border-width: 0;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+header {
+  background-color: var(--r-darkblue);
+  padding: 1.5rem 0;
+}
+
+header nav li {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+header nav a {
+  color: var(--r-yellow);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--r-darkblue);
+  color: white;
+  padding-bottom: .75rem;
+  clear: both;
+}
+
+footer::after {
+  content:'Copyright 2015. Relaxr.';
+  font-size: .85rem;
+}
+
+footer .sign-up {
+  text-align: center;
+  background-color: var(--r-yellow);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+footer .sign-up button {
+  background-color: var(--r-darkblue);
+  color: white;
+}
+
+footer nav ul {
+  margin: 2rem;
+}
+
+footer nav li {
+  width: 3rem;
+}
+
+.row.main {
+    padding: 1rem 0 5rem;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Fluid Grid based on float */
+
+.container::before, .row::before {
+  display: table;
+  content: " ";
+}
+
+.container {
+  width: 90%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  margin: 0 -1rem;
+  overflow: hidden;
+}
+
+[class*="col-"] {
+  padding: 0 1rem;
+  margin: 0;
+  float: left;
+}
+
+.col-1 {
+  width: calc(var(--r-grid-unit) * 1);
+}
+
+.col-2 {
+  width: calc(var(--r-grid-unit) * 2);
+}
+
+.col-3 {
+  width: calc(var(--r-grid-unit) * 3);
+}
+
+.col-4 {
+  width: calc(var(--r-grid-unit) * 4);
+}
+
+.col-5 {
+  width: calc(var(--r-grid-unit) * 5);
+}
+
+.col-6 {
+  width: calc(var(--r-grid-unit) * 6);
+}
+
+.col-7 {
+  width: calc(var(--r-grid-unit) * 7);
+}
+
+.col-8 {
+  width: calc(var(--r-grid-unit) * 8);
+}
+
+.col-9 {
+  width: calc(var(--r-grid-unit) * 9);
+}
+
+.col-10 {
+  width: calc(var(--r-grid-unit) * 10);
+}
+
+.col-11 {
+  width: calc(var(--r-grid-unit) * 11);
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Media Queries to handle mobile */
+
+@media only screen and (max-width: 768px) {
+    /* For small and extra small devices */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
