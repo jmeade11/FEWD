@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Storing Emails in Firebase</title>
+  <style>
+    * {
+      margin: 0;
+      font: 30px/1 sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: turquoise;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 4rem;
+      color: rgba(255,255,255,.85);
+      text-align: center;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+      max-width: 25rem;
+    }
+
+    span.arrow {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: .5rem 0 .5rem .6rem;
+      border-color: transparent transparent transparent darkturquoise;
+      transform: translateY(2px);
+    }
+
+    form {
+      display:flex;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      color: darkturquoise;
+      height: 1.5rem;
+      padding: .1rem .25rem;
+    }
+
+    button {
+      color: darkturquoise;
+      background-color: white;
+      border: none;
+      border-left: 1px solid turquoise;
+      padding: .1rem .25rem;
+      height: 1.5rem;
+      border-radius: 0 10px 10px 0;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Give Me Your Email Address!</h1>
+  <form>
+    <input type="email" name="email" required><button><span class="arrow" aria-label="submit email address"></span></button>
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script>
+    var config = {
+      apiKey: "AIzaSyC6RgjumOO2NZ_yh5OtxKbx6Yh06YeC_Cs",
+      authDomain: "fewd-class-project.firebaseapp.com",
+      databaseURL: "https://fewd-class-project.firebaseio.com",
+      projectId: "fewd-class-project",
+      storageBucket: "fewd-class-project.appspot.com",
+      messagingSenderId: "847250377353"
+    };
+
+    firebase.initializeApp(config);
+
+    $(document).ready(function(){
+
+      $('button').click(function(event){
+
+        event.preventDefault();
+
+        if ($('input')[0].validity.valid) {
+
+          var datetime = new Date().toString();
+
+          var registration = {
+            email: $('input').val(),
+            timestamp: datetime
+          };
+
+          firebase.database().ref('registrations').push().set(registration)
+              .then(function() {
+
+                $('h1').fadeOut('fast', function(){
+                  $(this).text('Thanks! Spam you later...😝').slideDown();
+                });
+
+                $('form').slideUp();
+
+
+              }, function(error) {
+
+                $('h1').fadeOut('fast', function(){
+                  $(this).text('Something went wrong! 💩 Try again...').slideDown();
+                });
+
+              });
+
+        } else {
+
+          $('h1').fadeOut('fast', function(){
+            $(this).text('Umm...Try an Email Address.').slideDown();
+          });
+
+        }
+
+      });
+
+    });
+  </script>
+</body>
+</html>

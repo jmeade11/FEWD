@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Storing Emails in Firebase</title>
+  <style>
+    * {
+      margin: 0;
+      font: 30px/1 sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: turquoise;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 4rem;
+      color: rgba(255,255,255,.85);
+      text-align: center;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: .5rem 0 .5rem .6rem;
+      border-color: transparent transparent transparent darkturquoise;
+      transform: translateY(2px);
+    }
+
+    form {
+      display:flex;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      color: darkturquoise;
+      height: 1.5rem;
+      padding: .1rem .25rem;
+    }
+
+    button {
+      color: darkturquoise;
+      background-color: white;
+      border: none;
+      border-left: 1px solid turquoise;
+      padding: .1rem .25rem;
+      height: 1.5rem;
+      border-radius: 0 10px 10px 0;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Give Me Your Email Address!</h1>
+  <form>
+    <input type="email" name="email" required><button><span aria-label="submit email address"></span></button>
+  </form>
+
+  <!-- Just like jQuery, the database we're using needs some code to be loaded first -->
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+  <!-- Plus, we're still going to use jQuery, so we'll load that too. -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- Next, we have our custom script block -->
+  <script>
+
+    // The config object contains our secret key
+    // and the url and ID for our database.
+
+    var config = {
+      apiKey: "AIzaSyC6RgjumOO2NZ_yh5OtxKbx6Yh06YeC_Cs",
+      authDomain: "fewd-class-project.firebaseapp.com",
+      databaseURL: "https://fewd-class-project.firebaseio.com",
+      projectId: "fewd-class-project"
+    };
+
+    // We need to 'initialize' the database once
+    // for the page by sending the config info
+    // using the initializeApp method.
+
+    firebase.initializeApp(config);
+
+    // We don't need to wait for the page to load
+    // to initialize the database, but we still need
+    // to wait for it to be ready so we can run
+    // any of our other jQuery stuff.
+
+    $(document).ready(function(){
+
+      // The event listener 'listens' for a click
+      // on the button on the page.  When a click
+      // happens it runs the click handler function
+      $('button').click(function(event){
+
+        event.preventDefault();
+
+        if ($('input')[0].validity.valid) {
+          // We're creating a variable to hold the
+          // email address which we get using the
+          // jQuery .val() method.
+
+          // We need to send our information to the
+          // database in an object though, so we'll
+          // create one called registration that has
+          // one property called email and another
+          // that just stores the date and time when
+          // the button is clicked.
+
+          var datetime = new Date().toString();
+
+          var registration = {
+            email: $('input').val(),
+            timestamp: datetime
+          };
+
+          // The firebase script we loaded separately has
+          // methods in it we're going to use to send
+          // our data and put them in a 'collection'
+          // named registrations.
+
+          // First, we call the firebase.database().
+          // This code uses our config info so that
+          // whatever we do (get/set/delete data) happens
+          // in our database.
+
+          // Next, the .ref() method lets us create or
+          // specify a name for the collection where we
+          // want to store our data.
+
+          // Then we use .push() because in this case we
+          // always want to create a new record in the
+          // collection.  This works like the array push
+          // method we talked about and 'pushes' the new
+          // record into the collection after the last
+          // existing record.
+
+          // The next method is .set(), which simply takes
+          // whatever data we give it and sends it to the
+          // database.  In this case, we're passing it the
+          // registration variable because that contains
+          // the object we created above with the
+          // email address we got from the input.
+
+          // The .then() method waits for the database to
+          // respond.  It takes two functions as arguments.
+          // The first function runs if everything was
+          // successful!  The second one, if there was an
+          // error.
+
+          firebase.database().ref('registrations').push().set(registration)
+              .then(function() {
+                // If everything worked, change the h1
+                // text to display a thank you message
+                $('h1').text('Thanks! Spam you later...😝');
+
+                // and we'll hide the form that has the
+                // input in it
+                $('form').hide();
+
+
+              }, function(error) {
+
+                  // If things didn't work, we can just
+                  // change the text of the h1 to ask the
+                  // user to try again.
+
+                  $('h1').text('Something went wrong! 💩 Try again...');
+              });
+
+        } else {
+          $('h1').text('Umm...Try an Email Address.');
+        }
+
+      });
+
+    });
+  </script>
+</body>
+</html>
