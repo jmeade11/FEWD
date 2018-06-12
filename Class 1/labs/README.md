@@ -92,30 +92,3 @@ Grandma is pretty happy, but we can do better:
 3. Change the h1 font-size to 8% of the width of the smaller of the height or width of the viewport so it scales with the screen size!
 4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold
 5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
-
-## LAB 4: IMAGES
-Instructions:
-
-Let's add an image of some delicious cookies to our recipe.
-
-1. Grandma is pretty happy but thinks her recipe page could use some pizzaz. Open the the index.html and the styles.css files in the lab4 folder.
-2. Insert the cookie image into the page above the first heading.
-3. Set the image width to be 100% so it scales to fit the width of its container.
-
-Here's a file for you to use: https://github.com/jmeade11/crashcourse/blob/master/labs/lab4/cookies.jpg?raw=true
-
-## LAB 5: CLASSES & IDs
-Instructions: 
-
-1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab5 folder.
-2. The h1 is centered, but we want to also center the h4 tag that credits grandma and the paragraph with the link at the bottom of the page.
-3. Let's group each of the main areas of the recipe (ingredients, instructions, and nutrition) inside a set of section tags.
-4. Give each section a corresponding id.
-
-## LAB 6: FLOATS
-Instructions:
-
-1. Grandma says it would be a lot easier to read the recipe if you could see both the ingredients list and instructions at the same time. Let's open up the css and html files in the lab6 folder and make her happy.
-2. You'll need to set both the ingredients and instruction sections to be 50% in width and then float them both to the left, so they fit next to one another.
-3. Make sure you address the nutrition section so that it doesn't float with the other sections.
-4. Lastly, let's give the nutrition section some additional padding, but just on top! Make it 20px.
