@@ -1,8 +1,8 @@
-# FEWD Week #2: CSS Selectors & Layouts
+# HOMEWORK
+
+## FEWD Week #2: CSS Selectors & Layouts
 
 <br>
-
----
 
 ### Description
 
