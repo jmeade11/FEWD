@@ -1,4 +1,10 @@
+# LAB
+
 ## Relaxr Landing Page
+
+In order to put all of our new found skills to work, we're going to build a web page together!  The Relaxr team is looking to give you a shot at working with them.  The first assignment is to build a landing page for their product.  There's already a detailed design that their design team has created.  The details can be found below.
+
+![](https://github.com/jmeade11/FEWD/blob/master/Class%203/labs/relaxr/relaxr_landing.jpg)
 
 ### Design Details
 - benefits background color: #f0efef
