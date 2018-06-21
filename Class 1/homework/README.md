@@ -1,10 +1,9 @@
-# FEWD Week #1: HTML/CSS Basics
+# HOMEWORK
+
+## FEWD Week #1: HTML/CSS Basics
 
 
 <br>
-
----
-
 
 ### Description
 
