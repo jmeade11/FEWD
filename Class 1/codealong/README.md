@@ -1,5 +1,5 @@
 
-# CODEALONGS
+# CODEALONG
 
 ## Press Release Content
 
