@@ -18,19 +18,19 @@ If you nailed the homework, CONGRATS!  Ready to do some more?  Check out the [Fl
 
 #### Floats? Flexbox? Grid?
 
-If you're undecided on which technique to use, try Float or Grid.  Flexbox isn't really a great choice for laying out a whole page, because it only allows us to control the layout in one direction.  Flexbox is a great choice for individual elements on the page though, so if you want to get some practice with it, try using it to layout your top navigation.
+If you're undecided on which technique to use, try Float or Grid.  Flexbox isn't really the best choice for laying out a whole page because it only allows us to control the layout in one direction.  Flexbox is a great choice for individual elements on the page though, so if you want to get some practice with it, try using it to layout your top navigation.
 
 Using a combination of techniques to achieve the best outcome — mixing flexbox or floats at the element level with grid to layout your overall page for example — is not only perfectly acceptable, it's actually the best way to go.
 
 ##### When to use Float
 
 - Floats are great if you want to have **text flow around an image** or a pull quote.  This is precisely what they were designed to do.
-- Float is also helpful for page layout, if you know you really must **support very old browsers** like Internet Explorer.  If your webpage design must be reproduced faithfully for every site visitor, using float will give you the best coverage today.
+- Float is also helpful for page layout if you know you really must **support very old browsers** like Internet Explorer.  If your webpage design must be reproduced faithfully for every site visitor, using float will give you the best coverage today.
 - There is a technique that allows you to conditionally load styles for Internet Explorer 10 and 11.  This would be an option for allowing you to use modern tools like Flexbox and Grid, but provide at least a comparable experience for those who are still using older versions of Internet Explorer.  Read more about this technique [here](https://paper-leaf.com/blog/2014/09/targeting-ie-10-11-browsers-css/).
 
 ##### When to use Flexbox
 
-- Flexbox is a great option for laying out **parts** of your page.  For example, if you have a group of elements that you want to all align in a column or row and you want to be able to have fine grain control over the placement of the items, flexbox is the ideal option.
+- Flexbox is a great option for laying out **parts** of your page.  For example, if you have a group of elements that you want to all align in a column or row and you want to be able to have fine-grain control over the placement of the items, flexbox is the ideal option.
 - Flexbox is also the way to go if you want to **vertically align** elements in their container.  No other CSS properties allow us to do this so easily and without hacks.
 - Flexbox is also a great choice if you have lots of similar elements that you want to layout as a collection.  For example, if you have a card design, where each card links to an article or blog post, or for a **gallery** of thumbnail images.  The flex-wrap property makes this easy and reliable.
 
@@ -43,7 +43,7 @@ Using a combination of techniques to achieve the best outcome — mixing flexbox
 
 Google fonts are a great for achieving a more polished design on the web.
 
-##### Why do We Need Google Fonts?
+##### Why Do We Need Google Fonts?
 
 So far, we've been using either the default font declaration or specifying 'sans-serif' as our alternative font-family.  This is fine, but it's pretty boring.  On the web, if we want to jazz things up with better looking fonts, we have to use a font service.  Why?  Because we simply don't know which fonts will be installed on a user's device.
 
@@ -53,7 +53,7 @@ Font files that we specify when we use Google Fonts have to be sent to the user'
 
 1. To use Google Fonts, go to https://fonts.google.com/.
 2. Click on the ⨁ symbol next to the font name for the font you wish to use.
-3. A pop up titlebar will apear at the bottom of the screen the total number of font families you have selected.
+3. A pop up titlebar will apear at the bottom of the screen showing the total number of font families you have selected.
 4. Click the titlebar to display the details for that font.
 5. There are two links in red that read **Embed** and **Customize**.
 6. Click the **Customize** link and choose the font weights and styles you want to include in your page.  **REMEMBER**: font files are big, so make sure to only select the font weights and styles you really need or your site visitors will have to download files unnecessarily.
@@ -62,7 +62,7 @@ Font files that we specify when we use Google Fonts have to be sent to the user'
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 ```
 8. Add this link to your page ```<head>``` tags and **make sure to put it *before* your page stylesheet**.  The Google Fonts stylesheet acts like any other stylesheet and is subject to cascading rules.  If you don't add it first, the fonts may not display as expected.
-9. Back on the Google Fonts page in the pop up modal, there will be the CSS rule that you'll use for you fonts in your stylesheet.  So copy the code under the title **Specify in CSS** and add it to the rule set for your selector.  For example, if you want to use the Roboto Google Font everywhere in your page, you would add it to your html selector rules:
+9. Back on the Google Fonts page in the pop up modal, there will be the CSS rule that you'll use in your web page's stylesheet. Copy the code under the title **Specify in CSS** and add it to the ruleset for your selector. (If you selected multiple different font families, you'll need to copy each one and separately add them to the rules in your stylesheet).  For example, if you want to use the Roboto Google Font everywhere in your page, you would add it to your html selector rules:
 ```css
 html {
   font-family: 'Roboto', sans-serif;
@@ -70,10 +70,12 @@ html {
 
 /* You can also specify, different fonts for unique elements on the page */
 h1, h2 {
-  font-family: 'Lobster', cursive; /* Now, only h1 and h2 elements will have this font */
+  font-family: 'Lobster', cursive; /* Now, only h1 and h2 elements will use this font family */
 }
 ```
-Note that there are *fallback* fonts specified in the CSS declarations.  The Roboto font, for example, will fallback to sans-serif if the Roboto font doesn't load for any reason.  In this case the default sans-serif font for the device is used instead.
+Note that there are *fallback* fonts specified in the CSS declarations.  The Roboto font, for example, will fallback to sans-serif if the Roboto font doesn't load for any reason.  In the case of the Lobster font, the default cursive font for the device is used if Lobster isn't loaded.
+
+
 10. To specify a different font-weight, use the numbers that correspond to the weights that you've added to your initial font selection.  For example, the Roboto font has 12 different styles ranging from *thin* to *black*.  To use the thin version, you would add the font-weight to your CSS declaration like this:
 ```css
 h1 {
