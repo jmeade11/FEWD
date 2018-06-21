@@ -5,7 +5,7 @@ Class 4 is all about laying out your web pages.  We examine the three ways: floa
 
 ## Objectives
 
-Before next week, take some time to review everything we've learned in the last two weeks.  If anything is still fuzzy, ask a question on Slack:
+Before next week, take some time to review everything we've learned in the last two weeks.  If anything is still fuzzy, don't be shy: Ask a question on Slack!
 
 <ul>
   <li>Creating a basic HTML page boilerplate with the DOCTYPE, html, head, title and body tags.</li>
