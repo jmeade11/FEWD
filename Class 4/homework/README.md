@@ -80,7 +80,7 @@ h1 {
   font-weight: 100;
   /* All your other styles for h1 can go here too */
 }
-
+```
 ##### Other Options
 
 Google fonts also has some additional styles that you can use to make your fonts stand out.  Check them out in the [Guide to Google Fonts](https://developers.google.com/fonts/docs/getting_started).
