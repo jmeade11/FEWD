@@ -30,6 +30,7 @@ plugins/ios.json
 www/
 $RECYCLE.BIN/
 slides/
+codealong-finished/
 
 .DS_Store
 Thumbs.db

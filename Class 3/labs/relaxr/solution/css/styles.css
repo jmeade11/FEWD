@@ -3,10 +3,14 @@ html {
   background-color: #cccccc;
   font-family: sans-serif;
   color: white;
+  margin: 0;
+}
+
+body {
+  margin: 0;
 }
 
 * {
-  margin: 0;
   box-sizing: inherit;
 }
 
@@ -21,17 +25,17 @@ header {
 }
 
 h1 {
-  margin-top: 30%;
+  margin-top: 20%;
   font-size: 3rem;
 }
 
 button {
   background: #f9e42e;
   border: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 12px 15px;
-  border-radius: 8px;
+  padding: 10px 25px;
+  border-radius: 5px;
   margin: 1rem;
 }
 
@@ -43,11 +47,11 @@ main {
 
 p {
   margin: .75em 0;
-  width: 70%;
+  width: 60%;
 }
 
 ul {
-  width: 70%;
+  width: 60%;
 }
 
 aside {
@@ -59,19 +63,38 @@ aside {
 
 blockquote {
   font-style: italic;
+  font-size: 120%;
+  width: 65%;
+  margin: auto;
 }
 
 cite {
+  display: inline-block;
   font-style: normal;
   font-weight: bold;
+  font-size: 110%;
+  margin-top: .75rem;
 }
 
 div {
   background-color: #f9e42e;
 }
 
-footer {
+.secondary {
   background-color: #033048;
+  color: white;
+}
+
+footer {
+  background-color: #121212;
   text-align: center;
   padding-bottom: 1rem;
+}
+
+img {
+  margin: 3rem 1rem 1rem;
+}
+
+nav {
+  padding: 1rem;
 }
