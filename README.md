@@ -6,7 +6,7 @@ Also, check out the [Wiki](https://github.com/jmeade11/FEWD/wiki).  There are he
 
 ## How to Download Class Materials
 
-There are two options: download a zip copy of the files each time you need them, or create a clone using GitHub Desktop which will sync the files each time
+There are two options to get the materials on this site: download a zip copy of the files each time you need them, or create a clone using GitHub Desktop which will sync the files each time.
 
 ### Clone with GitHub Desktop
 The best way to work with this repository is to **clone** it to your desktop.  You can do this very easily if you have GitHub Desktop installed.  
