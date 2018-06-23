@@ -16,12 +16,15 @@ The best way to work with this repository is to **clone** it to your desktop.  Y
 ![](https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png)
 4. This will attempt to launch GitHub Desktop.  If you are prompted, make sure you choose the option to allow access.
 5. When GitHub Desktop launches, you'll be presented with a modal dialog entitled **Clone a Repository**, under the **local path** option click the **Choose...** button and select a folder on your computer where you would like to sync the repository locally and choose **Clone**.  
-<img src="https://help.github.com/assets/images/help/desktop/clone-choose-button-url-mac.png" width="500">
+<img src="https://help.github.com/assets/images/help/desktop/clone-choose-button-url-mac.png" width="500"/>
+
 6. Click **Fetch origin** in the top bar of Github Desktop to update your branch for the first time.  This will transfer the files to the folder you specified.
-<img src="https://help.github.com/assets/images/help/desktop/fetch-button.png" width="700">
+<img src="https://help.github.com/assets/images/help/desktop/fetch-button.png" width="700"/>
+
 7. Open the folder and copy the file you need!
 <br>
+
 #### Update Files
 To get the latest changes, just open GitHub Desktop and click the **Pull Origin** button in the top bar.
-<img src="https://help.github.com/assets/images/help/desktop/pull-button.png" width="700">
+<img src="https://help.github.com/assets/images/help/desktop/pull-button.png" width="700"/>
 
