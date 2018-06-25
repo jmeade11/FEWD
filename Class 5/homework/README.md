@@ -11,7 +11,7 @@ During Class 6, we're going to start building the Startup Matchmaker website.  W
 For your homework for Class 5, create a basic website that will be our mobile site skeleton:
 
 
-![](mobile.jpg)
+![](mobile-design.jpg)
 ---
 
 ### Resources
