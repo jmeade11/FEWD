@@ -32,7 +32,7 @@ For your homework for Class 5, create a basic website that will be our mobile si
 9. Set the #join background color to: #17898e and font color to: #ccc.
 10. Give the footer a background color of: #222 and font color of: #ccc.
 11. Make the boxes in the openings section using divs with flexbox and flexwrap.
-12. Make the
+12. Make the logos in a grid if you can!
 
 
 ---
