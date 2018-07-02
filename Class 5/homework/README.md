@@ -6,7 +6,7 @@
 
 ### Description
 
-During Class 6, we're going to start building the Startup Matchmaker website.  We'll be building it using **Responsive Web Design** techniques and following the **mobile-first** approach.  That means, we'll be building the mobile version of our site and then enhancing using **media queries** for progressively larger screens.
+Over the course of the next few classes, we'll be building up the Startup Matchmaker website.  We'll be using **Responsive Web Design** techniques and following the **mobile-first** approach.  That means, we'll be building the mobile version of our site first and then enhancing it for progressively larger screens.
 
 For your homework for Class 5, create a basic website that will be our mobile site skeleton:
 
