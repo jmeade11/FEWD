@@ -111,7 +111,7 @@ jQuery has already been added to this Codepen for you. Click the **Fork** button
 We’re going to add a class to the body tag when the page loads.  To do this we use the basic jQuery syntax of:
 
 ```js
-$('selector’).action();
+$('selector').action();
 ```
 
 The selector we’ll be using is the ```body``` and the action (technically called a method) is ```addClass()```, but the addClass method needs to be told which class to add.  We do that by passing the class name to the method in the parentheses.
