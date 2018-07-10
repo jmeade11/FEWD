@@ -108,17 +108,17 @@ jQuery has already been added to this Codepen for you. Click the **Fork** button
 
 ##### Using the addClass() Method
 
-We’re going to add a class to the body tag when the page loads.  To do this we use the basic jQuery syntax of:
+We’re going to add a class to the body tag when the page loads.  To do this, we use the basic jQuery syntax of:
 
 ```js
 $('selector').action();
 ```
 
-The selector we’ll be using is the ```body``` and the action (technically called a method) is ```addClass()```, but the addClass method needs to be told which class to add.  We do that by passing the class name to the method in the parentheses.
+The selector we’ll be using is the ```body``` and the action (technically called a *method*) is ```addClass()```, but the addClass method needs to be told which class to add.  We do that by passing the class name to the method in the parentheses.
 
-Type: ```$('body').addClass('let-there-be-light’);``` in the JS window.  When you do and the page is refreshed, it will add the let-there-be-light class to the body and the animation will play.  Notice that the class is added to the body but has two effects:
+Type: ```$('body').addClass('let-there-be-light’);``` in the JS window.  When you do and the page is refreshed, it will add the let-there-be-light class to the body and the animation will play.  Notice that the class is added to the body and has the following two effects:
 
-The background color of the body is changed from black to green.  The transition property in the body declaration ensures that the color is transitioned smoothly.  This is done with these two declarations in our CSS:
+1. The background color of the body is changed from black to green.  The transition property in the body declaration ensures that the color is transitioned smoothly.  This is done with these two declarations in our CSS:
 
 ```css
 body {
@@ -132,7 +132,7 @@ body {
 }
 ```
 
-The logo animates into place.  This is done by taking advantage of the general descendant combinator!  Notice the CSS declaration:
+2. The logo animates into place.  This is done by taking advantage of the general descendant combinator!  Notice the CSS declaration:
 
 ```css
 .let-there-be-light header img {
@@ -232,20 +232,22 @@ jQuery has already been added to this Codepen for you. Click the **Fork** button
 
 Now you're on your own.  Use your new skills to add click handlers for the red and blue buttons.  Remember to make your selector target **only** the buttons with the red or blue class in the event listener.  (If you just use the blue or red class as the selector, the ball will have a click handler added as well).
 
-When you click on the button it should remove the current color class on the ball then add the corresponding new class.  For example, when you click on the blue button, it should add the blue class to the ball, but also remove the red class.
+When you click on the button, it should remove the current color class on the ball, then add the corresponding new class.  For example, when you click on the blue button, it should add the blue class to the ball, but also remove the red class.
 
-Did you get the ball to change between red and blue?  Awesome!  Once again, we can make our code cleaner and more efficient by using what's known as **method chaining**.  Method chaining allows us to chain the add and remove class methods in one statement.  This is more efficient, because the Javascript engine only has to find the element with the id of ball once!  Method chaining looks like this:
+Did you get the ball to change between red and blue?  Awesome!  Once again, we can make our code cleaner and more efficient by using what's known as **method chaining**.  Method chaining allows us to chain the add and remove class methods in one statement.  This is more efficient because the Javascript engine only has to find the element with the id of ball once!  Method chaining looks like this:
 
 ```js
 $('selector').action().action();
 ```
 ##### Creating a Click Handler for the Bounce Button
 
-The bounce button has several additional challenges in that there’s no unique class or id on the bounce button.  See if you can create a selector using a pseudo class that will target only the 3 third button in the group, or the last button in the group.
+The bounce button has several additional challenges in that there’s no unique class or id on the bounce button.  See if you can create a selector using a pseudo class that will target only the third button in the group, or the last button in the group.
 
-The bounce button also needs to *toggle* the bounce on and off, since there’s no corresponding waiting button.
+The bounce button also needs to *toggle* the bounce on and off since there’s no corresponding waiting button.
 
-Finally, in your css, move the waiting class to the end of the CSS file.  (Just select the class and its declaration, cut it and then paste it after all of the other declarations in the css area).  Click on the bounce button.  If you simply used toggleClass on the bounce class, notice how the button no longer works!  Why?  You can right-click on the ball and inspect it to see that the bounce class is being added, but the waiting class is still there.  That was fine when the waiting class was before the bounce class in the css, but when you move it, it no longer can be overridden because of the cascade order of the css.  To make our Javascript more ‘resilient’ (less likely to break from a change that we make to a different part of our program), you’ll need to also toggle the waiting class off and on.  Chain your methods to toggle between the bounce and waiting classes.
+Finally, in your css, move the waiting class to the end of the CSS file.  (Just select the class and its declaration, cut it and then paste it after all of the other declarations in the css window).  Click on the bounce button.  If you simply used toggleClass on the bounce class, notice how the button no longer works!  Why?  
+
+You can right-click on the ball and inspect it to see that the bounce class is being added, but the waiting class is still there.  That was fine when the waiting class was before the bounce class in the css, but when you move it, it no longer can be overridden because of the cascade order of the css.  To make our Javascript more ‘resilient’ (less likely to break from a change that we make to a different part of our program), you’ll need to also toggle the waiting class off and on.  Chain your methods to toggle between the bounce and waiting classes.
 
 
 ## Additional Methods to Practice Using
