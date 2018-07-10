@@ -260,7 +260,7 @@ We also looked at the following methods in class:
 
 ```fadeToggle()```: toggles between fading in a hidden element or fading out a visible element.  You can pass it values like 'slow' or a number (remember no quotes around numbers), which represents the time in milliseconds.  1000 milliseconds = 1 second.
 
-```slideDown()```: slides a hidden element that has display none applied to it down to cause it to display.  You can pass it values like 'slow' or a number (remember no quotes around numbers), which represents the time in milliseconds.  1000 milliseconds = 1 second.
+```slideDown()```: slides a hidden element (one that has display none applied to it) down to cause it to display.  You can pass it values like 'slow' or a number (remember no quotes around numbers), which represents the time in milliseconds.  1000 milliseconds = 1 second.
 
 ```slideUp()```: slides a visible element up to cause it to be hidden.  You can pass it values like 'slow' or a number (remember no quotes around numbers), which represents the time in milliseconds.  1000 milliseconds = 1 second.
 
