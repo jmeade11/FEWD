@@ -1,18 +1,31 @@
 
-# Class 8 Materials
+# Class 9 Materials
 
-Today, we begin working with Javascript, and specifically jQuery.  As we move into this part of the course curriculum, you'll be learning more about computer science — which I like to think of as learning how to *think* like a computer.  Each week from here out, you'll also be focused on taking specific steps toward completing your final projects.
+Today, we learn about variables and while we're at it, we're going to work with a bunch of different operators in Javascript.  Finally, we'll be talking about a new method in jQuery that lets us start learning how to manipulate the DOM.
 
 ## Objectives
 
-Now that you have a good, strong foundation in both HTML and CSS, we can leverage that knowledge to learn Javascript.  Of the primary web technologies every front end web developer must know, Javascript is the final piece of the puzzle.  With it, we can respond to external input caused by the user interacting with the page.  Class 8 is a gentle introduction to jQuery; what it is and its basic syntax.  By the end of class, you should:
+By the end of class, you should:
 
 <ul>
-  <li>Have an understanding of what jQuery is and why we use it.</li>
-  <li>Use the proper jQuery syntax to construct basic statements to add, remove and toggle classes dynamically through Javascript.</li>
-  <li>Be able to distinguish between strings, numbers and boolean values.</li>
-  <li>Understand what 'this' is and how it can be used to write more optimized code.</li>
+  <li>Understand what variables are and how to declare and assign them in Javascript.</li>
+  <li>Know what an operator is and understand how they are used.</li>
+  <li>Understand how to use the jQuery text() method to modify text in the DOM.</li>
 </ul>
+
+## Homework
+
+Now that we've started the Javascript portion of our curriculum, your final projects will take centerstage in your homework assignments.  **Before next class your project concepts are due.**
+
+Submit them to me over Slack.  You may submt:
+
+- A type written description of your project
+- Draw a concept on paper and photograph it
+- Mock up a design in Photoshop, Powerpoint, or some other static electronic format
+- Create a prototype using Sketch or some other prototyping software and submit a video
+
+Please make sure to provide some explanation of your goals and objectives.
+
 
 ## What You Learned about HTML & CSS
 
