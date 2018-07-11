@@ -172,7 +172,7 @@ In the HTML, add the ```open``` class to the header element.  Notice what's happ
 
 ```
 
-So, what's happening here is that the menu by default is placed using fixed positioning with it's right property set to -75%.  This has the effect of moving the menu offscreen to the right so it isn't visible.  When the open class is added to any ancestor though, it causes the right property of the menu to be overridden with the value of 0.  That means that the menu will be positioned on the right edge of the viewport.  The transition property makes it slide in nice and smoothly.
+So, what's happening here is that the menu by default is placed using fixed positioning with its right property set to -75%.  This has the effect of moving the menu offscreen to the right so it isn't visible.  When the open class is added to any ancestor though, it causes the right property of the menu to be overridden with the value of 0.  That means that the menu will be positioned on the right edge of the viewport.  The transition property makes it slide in nice and smoothly.
 
 Okay, remove the open class now from the HTML.
 
