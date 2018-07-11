@@ -13,6 +13,12 @@ The steps to load jQuery are as follows:
 
 ### CodePen CodeAlongs
 
+#### [Scorekeeper](https://codepen.io/jme11/pen/EparbP?editors=0010)
+
+jQuery has already been added to this Codepen for you. Click the **Fork** button to create a copy for yourself.
+
+You can see a demo of the page we'll be building [here](https://codepen.io/jme11/live/PRXMJE).  Click on the scoreboxes to increment the scores.
+
 
 #### [Style Changer](https://codepen.io/jme11/pen/XBJBWp?editors=0110)
 
