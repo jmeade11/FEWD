@@ -20,6 +20,10 @@ body {
   height: 4rem;
   margin-right: .5rem;
   transform-origin: center top;
+  animation-name: rocket-fly;
+  animation-duration: .5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 .text {
   height: 1rem;
@@ -30,6 +34,10 @@ body {
   z-index: -1;
   width: 100%;
   transform-origin: center bottom;
+  animation-name: smoke-rising;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 @keyframes rocket-fly {
@@ -64,3 +72,17 @@ body {
 
  */
 
+@keyframes smoke-rising {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+
+}
