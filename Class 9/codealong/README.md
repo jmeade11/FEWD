@@ -43,7 +43,7 @@ There are is a div wrapping each of the home and away scorebox areas.  The conte
 
 ##### Variables in Practice
 
-We're learning about variables today.  For this exercise the goal is to increment the score by 1 each time its scorebox is clicked.  To accomplish this, we'll use a variable to store the current value of the score for each of the home and away teams.  We'll then use the jQuery ```text()``` method to update the score displayed on the page.
+We're learning about variables today.  For this exercise the goal is to increment the score by 1 each time its scorebox is clicked.  To accomplish this, we'll use a variable to store the current value of the score for each of the home and away teams.  We'll then use the jQuery ```.text()``` method to update the score displayed on the page.
 
 So the steps are:
 
@@ -61,6 +61,8 @@ So the steps are:
 
 We're going to create a variable to store the current score count for the home score.  Although we would normally favor using const to declare variables, the value in this variable is going to change every time a click is observed on the home scorebox, so we need to use ```let``` here.  Also, we want to assign a value to it immediately. This is important because we want to be sure the first time our click handler is run it has some value to add 1 to initially, so will *initialize* the variable by assigning a value of 0.
 
+It's important that we declare our variable ***outside*** of any of our event listener.  This variable needs to store the value for the home score for as long as the page is not refreshed.  If we were to place it inside an event listener, the value wouldn't be persisted after the click handler ran.  
+
 ```js
 let homeScore = 0;
 
@@ -74,6 +76,69 @@ As a refresher on how we create an event handler, here's the basic syntax:
 $('selector-to-listen-to').event-to-listen-for(function(){  /* Event Handler Goes Here */  });
 
 ```
+
+In this case, to create an event listener that listens for clicks on the home scorebox, we need to use a selector that is specific to the home scorebox and excludes the away scorebox, which also has a class of scorebox.  We can take advantage of the fact that the home scorebox has an ancestor with an id of home to distinguish it from the away scorebox.
+
+
+```js
+
+ $('#home .scorebox').click(function(){ 
+ 
+ /* Event Handler Goes Here */  
+ 
+ });
+
+```
+
+Did you use our silly way of remembering the syntax for the function portion of the listener?  
+
+*FUNCTION - OPEN - CLOSE - SQUIGGLY - SQUIGGLY*
+
+Technically, this part of the event listener is called an *anonymous callback function* but more on that in another class. :wink:
+
+###### Updating the Value of the Variable
+
+Inside the event handler, our first task is to update the value stored in the variable we created called ```homeScore```.  We need to add 1 to whatever value it currently holds, so the clearest way to write that is:
+
+
+```js
+
+homeScore = homeScore + 1;
+
+```
+
+We could, however, use one of the *unary operators* to write the same thing faster though like this instead:
+
+```js
+
+++homeScore;
+
+```
+
+Remember, the ```++``` **before** the variable name tells Javascript to increment the value inside the variable by 1 and let us use that new value right away.  
+
+###### Updating the Score in the Display
+
+Now that the variable holds the updated value, changing the display is cake!  We'll just use the jQuery ```.text()``` method to replace the current contents of the score div with the current score held in the variable.  Once again, we'll use the home id on the ancestor div to distinguish this score from the div with the away score.
+
+```js
+
+$('#home .score').text(homeScore);
+
+```
+Test it out! Did you get it to work?  If not check for errors in the console.  If there are no errors, make sure you've typed all of the selectors correctly!!!  Here's a link to the full working solution file: [Scorekeeper Solution](https://codepen.io/jme11/pen/PRXMJE?editors=0010).
+
+###### Replicating the Behavior for the Away Score
+
+Once you've got the home score working perfectly, you can duplicate it to create the away score functionality.  Just remember that the away score needs its own variable and you'll have to change all of the references to the div with the home id, and the event handler updates.
+
+##### BONUS
+
+If you got the Scorekeeper to work, great job!  Want a new challenge?  See if you can get the reset button to work.  Here's the basic plan:
+
+1. Create an event listener for the button.
+2. In the event handler, set both of the home and away score variables to 0.
+3. Finally, you'll need to update the text in the display.  Hint: Keep in mind, both divs you want to update have the same class of score and since you want to set both to '0', you don't need to have any more specificity than that in your selector. :smile:
 
 #### [Style Changer](https://codepen.io/jme11/pen/XBJBWp?editors=0110)
 
