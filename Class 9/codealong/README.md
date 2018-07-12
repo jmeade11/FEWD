@@ -109,7 +109,7 @@ homeScore = homeScore + 1;
 
 ```
 
-We could, however, use one of the *unary operators* to write the same thing faster though like this instead:
+We could, however, use one of the *unary operators* to write the same thing like this instead:
 
 ```js
 
