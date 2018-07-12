@@ -63,7 +63,7 @@ We're going to create a variable to store the current score count for the home s
 
 Also, we want to assign a value to it immediately. This is important because if it isn't given a value, Javascript gives it a value of ```undefined```.  The first time our click handler is run, it would be trying to add 1 to undefined, which isn't a number, so we'll *initialize* the variable by assigning it a value of 0.
 
-It's important that we declare our variable ***outside*** of any of our event listener.  This variable needs to store the value for the home score for as long as the page is not refreshed.  If we were to place it inside an event listener, the value wouldn't be persisted after the click handler ran.  
+It's important that we declare our variable ***outside*** of our event listener.  This variable needs to store the value for the home score for as long as the page is not refreshed.  If we were to place it inside an event listener, the value wouldn't be persisted after the click handler ran.  
 
 ```js
 let homeScore = 0;
