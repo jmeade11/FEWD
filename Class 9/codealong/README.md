@@ -71,7 +71,7 @@ let homeScore = 0;
 ```
 ###### Creating an Event Listener
 
-As a refresher on how we create an event handler, here's the basic syntax:
+As a refresher on how we create an event listener, here's the basic syntax:
 
 ```js
 
