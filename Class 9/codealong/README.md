@@ -30,11 +30,7 @@ We're going to be moving forward today with a lot of new material, so let's be s
 
 1. Create an event listener for the menu-toggle and use the slideToggle method on the menu in its handler.  Remember that slideToggle is one of the built in effects that jQuery does out of the box, so there's no CSS we need to add to animate the menu.
 
-2. Add an event listener for the font-family switcher.  In the event handler, toggle between the serif and sans-serif classes.
-
-Toggling both classes doesn't work on this one unless you do something first, use the inspector tools to try and debug the problem.
-
-Do you see that both classes are being added and removed simultaneously?  How can you make sure that one class is added when the page is loaded?
+2. Add an event listener for the font-family switcher.  In the event handler, toggle the sans-serif class.
 
 3. Create an event listener for **each** of the light and dark themes. Use the addClass and removeClass methods to add/remove the corresponding .light and .dark classes to the body element.
 
@@ -130,7 +126,7 @@ Also, since we're working with the body again, let's chain those methods:
 
 ```js
 
-/* Writing each operation on it's own line makes it easier to read */
+/* Writing each operation on its own line makes it easier to read */
 
 $('body')
     .removeAttr('style')
@@ -156,7 +152,7 @@ Can you swap the text of the font-family switcher when you click on the link?  T
 
 2. Use the text method to update the value of the text inside the span tag with the value of the currentFont variable.
 
-3. To captialize the text, you can add a CSS rule for the span tag and use the text-transform property.
+3. To captialize the text, you can add a CSS rule for the span tag and use the ```text-transform``` property.
 
 4. To make it really professional, you can use those string literals to concatenate the currentFont variable with the word 'Font', so it reads "Sans-Serif Font" or "Serif Font".
 
