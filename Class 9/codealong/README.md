@@ -26,7 +26,9 @@ jQuery has already been added to this Codepen for you. Click the **Fork** button
 
 ##### Review: Creating Event Listeners and Event Handlers
 
-We're going to be moving forward today with a lot of new material, so let's be sure we have the basics down pat.  You can see a demo of the page we'll be building [here](https://codepen.io/jme11/live/WzJrad).  Click on the vertical dots to display the menu and test its features.
+You can see a demo of the page we'll be building [here](https://codepen.io/jme11/live/WzJrad).  Click on the vertical dots to display the menu and test its features.
+
+We're going to be moving forward today with a lot of new material, so let's be sure we have the basics down pat. 
 
 1. Create an event listener for the menu-toggle and use the slideToggle method on the menu in its handler.  Remember that slideToggle is one of the built in effects that jQuery does out of the box, so there's no CSS we need to add to animate the menu.
 
