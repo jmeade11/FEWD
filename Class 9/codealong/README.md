@@ -120,8 +120,6 @@ $('body').removeAttr('style');
 
 To remove dark, light and serif classes, remember that you can pass them all to the removeClass() method in one go separating them with spaces only.  This is safe and reliable because jQuery automatically only removes the classes that it finds.
 
-While we're at it, let's make sure to re-add the sans-serif class so that the font-family switcher still works!
-
 Also, since we're working with the body again, let's chain those methods:
 
 ```js
@@ -130,8 +128,7 @@ Also, since we're working with the body again, let's chain those methods:
 
 $('body')
     .removeAttr('style')
-    .removeClass('dark light serif')
-    .addClass('sans-serif');
+    .removeClass('dark light serif');
 ```
 
 ###### Changing the Text in the Font-Family List Item
