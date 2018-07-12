@@ -19,6 +19,61 @@ jQuery has already been added to this Codepen for you. Click the **Fork** button
 
 You can see a demo of the page we'll be building [here](https://codepen.io/jme11/live/PRXMJE).  Click on the scoreboxes to increment the scores.
 
+Take a moment to familiarize yourself with the HTML: 
+
+```html
+<div id="home">
+  <div class="scorebox" role="button">
+    <div class="score">0</div>
+  </div>
+  <p role="button">HOME</p>
+</div>
+
+<div id="away">
+  <div class="scorebox" role="button">
+    <div class="score">0</div>
+  </div>
+  <p role="button">AWAY</p>
+</div>
+
+<button>Reset</button>
+```
+
+There are is a div wrapping each of the home and away scorebox areas.  The contents of each are identical — a div with a class of scorebox that acts as a container for the score, which is inside of a div with a class of score.  There's also the text HOME or AWAY wrapped in a ```p``` tag.  Additionally, there is a single reset button.
+
+##### Variables in Practice
+
+We're learning about variables today.  For this exercise the goal is to increment the score by 1 each time its scorebox is clicked.  To accomplish this, we'll use a variable to store the current value of the score for each of the home and away teams.  We'll then use the jQuery ```text()``` method to update the score displayed on the page.
+
+So the steps are:
+
+1. Create a variable to store the current score count for the home score.  The value in this variable is going to change every time a click is observed on the home scorebox, so we want to use the ```let``` keyword to declare the variable.
+
+2. Create an event listener that listens for clicks on the home scorebox.  Remember that **both** the home and away scoreboxes have a class of scorebox.  To distinguish the selector, we'll need to take advantage of the fact that the home scorebox has an ancestor with an id of home.   (Hint: Use the *general descendant* combinator :smile:.)
+
+3. In the click handler, we need to update the value of the variable holding the home score by reassigning the variable to its current value + 1.
+
+4. Replace the text inside the score with the value of the variable after we've updated it.  For this we'll use the text() method.  Once again, make sure to target the div with the class of score that is inside the div with the id of home.
+
+5. After we've tested and made sure that the home score is working as expected, we can duplicate all of the home score code and replace any references to home with away in order to get the away score to work too.  Make sure that you have a separate variable to store the away score value.
+
+###### Declaring a Variable to Hold the Score
+
+We're going to create a variable to store the current score count for the home score.  Although we would normally favor using const to declare variables, the value in this variable is going to change every time a click is observed on the home scorebox, so we need to use ```let``` here.  Also, we want to assign a value to it immediately. This is important because we want to be sure the first time our click handler is run it has some value to add 1 to initially, so will *initialize* the variable by assigning a value of 0.
+
+```js
+let homeScore = 0;
+
+```
+###### Creating an Event Listener
+
+As a refresher on how we create an event handler, here's the basic syntax:
+
+```js
+
+$('selector-to-listen-to').event-to-listen-for(function(){  /* Event Handler Goes Here */  });
+
+```
 
 #### [Style Changer](https://codepen.io/jme11/pen/XBJBWp?editors=0110)
 
