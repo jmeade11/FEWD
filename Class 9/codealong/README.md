@@ -39,7 +39,7 @@ Take a moment to familiarize yourself with the HTML:
 <button>Reset</button>
 ```
 
-There are is a div wrapping each of the home and away scorebox areas.  The contents of each are identical — a div with a class of scorebox that acts as a container for the score, which is inside of a div with a class of score.  There's also the text HOME or AWAY wrapped in a ```p``` tag.  Additionally, there is a single reset button.
+There are is a div wrapping each of the home and away scorebox areas.  The contents of each are identical — a div with a class of scorebox that acts as a container for the score.  The score is plain text inside of a div with a class of score.  There's also the text HOME or AWAY wrapped in a ```p``` tag.  Additionally, there is a single reset button.
 
 ##### Variables in Practice
 
@@ -59,7 +59,7 @@ So the steps are:
 
 ###### Declaring a Variable to Hold the Score
 
-We're going to create a variable to store the current score count for the home score.  Although we would normally favor using const to declare variables, the value in this variable is going to change every time a click is observed on the home scorebox, so we need to use ```let``` here.  Also, we want to assign a value to it immediately. This is important because we want to be sure the first time our click handler is run it has some value to add 1 to initially, so will *initialize* the variable by assigning a value of 0.
+We're going to create a variable to store the current score count for the home score.  Although we would normally favor using const to declare variables, the value in this variable is going to change every time a click is observed on the home scorebox, so we need to use ```let``` here.  Also, we want to assign a value to it immediately. This is important because if it isn't given a value, Javascript gives it a value of ```undefined````.  The first time our click handler is run, it would be trying to add 1 to undefined, which isn't a number, so we'll *initialize* the variable by assigning it a value of 0.
 
 It's important that we declare our variable ***outside*** of any of our event listener.  This variable needs to store the value for the home score for as long as the page is not refreshed.  If we were to place it inside an event listener, the value wouldn't be persisted after the click handler ran.  
 
