@@ -59,7 +59,7 @@ So the steps are:
 
 ###### Declaring a Variable to Hold the Score
 
-We're going to create a variable to store the current score count for the home score.  Although we would normally favor using const to declare variables, the value in this variable is going to change every time a click is observed on the home scorebox, so we need to use ```let``` here.  Also, we want to assign a value to it immediately. This is important because if it isn't given a value, Javascript gives it a value of ```undefined````.  The first time our click handler is run, it would be trying to add 1 to undefined, which isn't a number, so we'll *initialize* the variable by assigning it a value of 0.
+We're going to create a variable to store the current score count for the home score.  Although we would normally favor using ```const``` to declare variables, the value in this variable is going to change every time a click is observed on the home scorebox, so we need to use ```let``` here.  Also, we want to assign a value to it immediately. This is important because if it isn't given a value, Javascript gives it a value of ```undefined````.  The first time our click handler is run, it would be trying to add 1 to undefined, which isn't a number, so we'll *initialize* the variable by assigning it a value of 0.
 
 It's important that we declare our variable ***outside*** of any of our event listener.  This variable needs to store the value for the home score for as long as the page is not refreshed.  If we were to place it inside an event listener, the value wouldn't be persisted after the click handler ran.  
 
