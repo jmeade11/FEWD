@@ -20,10 +20,6 @@ body {
   height: 4rem;
   margin-right: .5rem;
   transform-origin: center top;
-  animation-name: rocket-fly;
-  animation-duration: .5s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
 }
 .text {
   height: 1rem;
@@ -34,10 +30,6 @@ body {
   z-index: -1;
   width: 100%;
   transform-origin: center bottom;
-  animation-name: smoke-rising;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
 }
 
 @keyframes rocket-fly {
@@ -57,32 +49,12 @@ body {
 }
 
 /* Create a keyframe animation for the smoke
-
   Make it start with opacity set to zero,
   then change to opacity .1 and finish back on opacity 0.
-
   Also scale the clouds at the beginning of the animation so
   they are offscreen and end with a large scale so they
   cover the entire screen.
-
   Finally, add it to the smoke class.
-
   As a bonus, change the delay and duration just for the
   smoke image in the background.
-
  */
-
-@keyframes smoke-rising {
-  0%{
-    opacity: 0;
-    transform: scale(0);
-  }
-  50% {
-    opacity: .1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(3);
-  }
-
-}
