@@ -1,21 +1,20 @@
 
-# Class 9 Materials
+# Class 10 Materials
 
-Today, we learn about variables and while we're at it, we're going to work with a bunch of different operators in Javascript.  Finally, we'll be talking about a new method in jQuery that lets us start learning how to manipulate the DOM.
+Today, we learn about control flow in our programs with conditionals.
 
 ## Objectives
 
 By the end of class, you should:
 
 <ul>
-  <li>Understand what variables are and how to declare and assign them in Javascript.</li>
-  <li>Know what an operator is and understand how they are used.</li>
-  <li>Understand how to use the jQuery text() method to modify text in the DOM.</li>
+  <li>Understand what control flow is.</li>
+  <li>Use logic and conditional structures to enable control flow</li>
 </ul>
 
 ## Homework
 
-Now that we've started the Javascript portion of our curriculum, your final projects will take centerstage in your homework assignments.  **Before next class your project concepts are due.**
+Now that we've started the Javascript portion of our curriculum, your final projects will take centerstage in your homework assignments.  **If you didn't already submit it, before next class your project concepts are due.**
 
 Submit them to me over Slack.  You may submt:
 
@@ -25,6 +24,15 @@ Submit them to me over Slack.  You may submt:
 - Create a prototype using Sketch or some other prototyping software and submit a video
 
 Please make sure to provide some explanation of your goals and objectives.
+
+## Midterm Check-in
+
+<ul>
+  <li>Schedule office hours check in with me.</li>
+  <li>Make sure your assignments are submitted.  I will have comments back to everyone by next week.</li>
+  <li>Final project proposals were due, if you didn't get to complete them, make sure you do so immediately.</li>
+  <li>Draft HTML is due week 7, so start now!</li>
+</ul>
 
 
 ## What You Learned about HTML & CSS
