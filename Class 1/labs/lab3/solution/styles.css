@@ -1,0 +1,26 @@
+html {
+  font: 16px sans-serif;
+  background-color: moccasin;
+}
+
+body {
+  border: 15px solid chocolate;
+  background-color: oldlace;
+  color: saddlebrown;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 8vmin;
+  text-align: center;
+}
+
+a {
+  color: chocolate;
+}
+
+span {
+  font-weight: bold;
+}

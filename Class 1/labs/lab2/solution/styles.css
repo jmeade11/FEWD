@@ -1,0 +1,19 @@
+html {
+  font: 16px sans-serif;
+  background-color: moccasin;
+}
+
+body {
+  border: 15px solid chocolate;
+  background-color: oldlace;
+  color: saddlebrown;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+a {
+  color: chocolate;
+}
