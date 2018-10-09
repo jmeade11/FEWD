@@ -13,4 +13,4 @@ You'll be building a personal website to share with your classmates like the one
 3. Add a basic index.html file with boilerplate.
 4. Add at least 5 pictures to your images folder.
 
-![](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class%201/homework/design.png)
+![Screenshot of Week 1 Homework](../../embedded-images/wk1-hmwk-design.png)
