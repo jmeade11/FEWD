@@ -10,4 +10,6 @@ This week, you'll be building a personal website to share with your classmates l
 3. Adding a basic index.html file with boilerplate.
 4. Adding at least 5 pictures to your images folder.
 
+So far, your project should resemble the following:
+
 ![Your file structure so far](../../embedded-images/cls1-hmwk-files.png)
