@@ -7,7 +7,7 @@
 2. Create a folder inside the bounty20 folder and call it **css**.
 3. Create another folder inside the bounty20 folder and call it **images**.
 4. Add the following image to your file by right-click on each one and choosing Save Image As from the context menu.
-<img src="https://raw.githubusercontent.com/jmeade11/FEWD/master/Class%202/codealong/solution-bounty20/images/sandwich.jpg" width="50%" /><br />
+<img src="https://raw.githubusercontent.com/jmeade11/FEWD/master/Class2/codealong/solution-bounty20/images/sandwich.jpg" width="50%" /><br />
 5. Create an index.html in the bounty20 folder and add your HTML boilerplate. 
 
 ### STRUCTURING THE CONTENT
