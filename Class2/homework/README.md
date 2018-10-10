@@ -359,3 +359,7 @@ footer {
   ```
 </details><br>
 
+## DESIGN FILE
+
+![Screenshot of Week 1 Homework](../../embedded-images/wk1-hmwk-design.png)
+
