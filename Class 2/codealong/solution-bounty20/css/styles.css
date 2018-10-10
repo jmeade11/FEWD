@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+13px|Mr+Dafoe');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Slabo 13px";
+  color: rgba(255,255,255,.85);
+  scroll-behavior: smooth;
+}
+
+header {
+  background: url(../images/bounty20-logo.svg), url(../images/sandwich.jpg);
+  background-size: 50%, cover;
+  background-repeat: no-repeat;
+  background-position: 50% 95%, center;
+  background-attachment: scroll, fixed;
+  height: 100vh;
+}
+
+nav {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #e09d34;
+  text-shadow: 1px 1px 0px rgba(0,0,0,.25);
+}
+
+.brand {
+  padding: 1em;
+  margin: 0 .25em;
+  font-family: 'Mr Dafoe';
+  cursor: pointer;
+}
+
+a {
+  background-color: transparent;
+  color: rgba(255,255,255,.85);
+  text-transform: uppercase;
+  padding: 1em;
+  margin: 0 .25em;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: #45001d;
+}
+
+main {
+  background: #45001d;
+  border-top: #e09d34 2rem solid;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Mr Dafoe';
+  color: #793348;
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0,0,0,.25);
+  margin: 2rem;
+}
+
+section {
+  column-count: 2;
+  column-gap: 2em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+div {
+  break-inside: avoid;
+  margin-bottom: 2em;
+}
+
+.price {
+  float: right;
+  color: #e09d34;
+}
+
+.calories {
+  color: #793348;
+}
+
+p {
+  margin: .75em 0;
+}
+
+footer {
+  background-color: #e09d34;
+  color: #45001d;
+  text-align: center;
+  padding: 1em 1em 0;
+}
+
+address {
+  font-style: normal;
+  break-inside: avoid;
+}
+
+a[href^="mailto:"] {
+  background-color: #45001d;
+  color: #e09d34;
+  padding: 2px .5em;
+  margin: 0;
+}
+
+.logo {
+  width: 50%;
+  margin: 2em;
+}
+
+iframe {
+  margin: 2em -2em 0;
+  width: 100vw;
+}
