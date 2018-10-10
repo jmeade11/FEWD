@@ -3,10 +3,22 @@
 
 ### SET UP YOUR FILES
 
-
+1. Create a new folder and name it bounty20.
+2. Create a folder inside the bounty20 folder and call it **css**.
+3. Create another folder inside the bounty20 folder and call it **images**.
+4. Add the following image to your file by right-click on each one and choosing Save Image As from the context menu.
+<img src="https://raw.githubusercontent.com/jmeade11/FEWD/master/Class%202/codealong/solution-bounty20/images/sandwich.jpg" width="50%" /><br />
+5. Create an index.html in the bounty20 folder and add your HTML boilerplate. 
 
 ### STRUCTURING THE CONTENT
 
+6. We'll be adding our basic sections to the page next.  Add a `header` tag (remember: this is different from head and heading tags), followed by a `main` tag, followed by a `footer` tag.
+7. In the `header` add a nav tag and create an anchor tag for each of our links: Our Menu, Contact, Directions.  Leave the href for each empty for now.
+8. Add a heading to the `main` section with the text Menu.
+
+#### Menu Content
+
+9. Copy and paste the following to quickly add the menu items to your page inside the `main` tags: 
 
 ```html
 
@@ -41,4 +53,17 @@
         <p>500 calories</p>
       </div>
 
+```
+
+#### Address Block Content
+
+10. Copy and paste the following to quickly add the menu items to your page inside the `footer` tags: 
+
+```
+Contact:
+20 Summer Street
+Boston, MA
+Phone: 617-555-1212
+
+Email: orders@bounty20.com
 ```
