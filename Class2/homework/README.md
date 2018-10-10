@@ -225,20 +225,108 @@ So far, your project should resemble the following:
   ```
 </details>
 
-22. Inside your `styles.css` file, add the universal 
+22. Inside your `styles.css` file, add the universal selector and set the box-sizing to border-box and remove all of the margins. 
 
 <details>
   <summary>GET A HINT</summary>
+ 
+  ```css
   
-  > Either choose, File > New file then File > Save As and make sure you save the file in the css folder or right-click on the css folder and choose New file.  In VS Code, you can just click the file with a plus icon next to the file name in the project area.
-  
-  ```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>About Me</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  ```
+</details>
+
+23. We're going to set some base styles that will apply to the whole page.  That means we want to use the html element as the selector. 
+- Set the page background to #343434.
+- Set the color of the font to #16b1b5.
+- Set the font family for the page to 'Raleway', sans-serif.
+- Set the font weight to 200.
+- Increase the base font size to 24px.
+- Give our page smooth scrolling.
+
+<details>
+  <summary>GET A HINT</summary>
+ 
+  ```css
+html {
+  background-color: #343434;
+  color: #16b1b5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  scroll-behavior: smooth;
+  font-size: 24px;
+}
+  ```
+</details>
+
+24. Next let's tackle the header styles.
+- Give the header 40px of padding.
+- Set the line-height for your headline to .8.
+- We need to add some margin back to the top and bottom of the p tags since we removed all margins. Add 1em of padding to the top and bottom of the paragraphs.
+- Decrease the font-size for the nav elements to 16px and center them.
+- Finally, to style our links, change the color to white.  Add 20px of margin and padding. Transform the case to uppercase. Remove the underline.  Add a 1px solid border.
+
+<details>
+  <summary>GET A HINT</summary>
+ 
+  ```css
+header {
+  padding: 40px;
+}
+
+h1 {
+  line-height: .8;
+}
+
+p {
+  margin: 1em 0;
+}
+
+nav {
+  font-size: 16px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid white;
+}
+  ```
+</details>
+
+24. Next we'll handle the styles for the main section.
+- Give the work section a background-color of #16b1b5, padding of 40px and set the font color to white.  We also need to set the column-count on this one to 2 columns.
+- The hobbies section needs padding of 40px too. 
+- Our gallery is going to get a column count of 3 and we're going to remove the column gap by setting it to 0.  Set the background color on the gallery to #16b1b5 like the work section.
+- We used divs to wrap our column contents so that we can use the special break-inside: avoid, to keep the div contents together in one column.
+
+<details>
+  <summary>GET A HINT</summary>
+ 
+  ```css
+#work {
+  background-color: #16b1b5;
+  padding: 40px;
+  column-count: 2;
+  color: white;
+}
+
+#hobbies {
+  padding: 40px;
+}
+
+#gallery {
+  column-count:3;
+  column-gap: 0;
+  background-color: #16b1b5;
+}
   ```
 </details>
 
