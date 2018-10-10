@@ -269,7 +269,7 @@ html {
 - Give the header 40px of padding.
 - Set the line-height for your headline to .8.
 - We need to add some margin back to the top and bottom of the p tags since we removed all margins. Add 1em of padding to the top and bottom of the paragraphs.
-- Decrease the font-size for the nav elements to 16px and center them.
+- We need to add some padding to the nav element to address a special phenomenon called margin collapse, which you'll be reading about next week.  So give the nav 1em of top and bottom padding. Also, decrease the font-size for the nav elements to 16px and center them.
 - Finally, to style our links, change the color to white.  Add 20px of margin and padding. Transform the case to uppercase. Remove the underline.  Add a 1px solid border.
 
 <details>
@@ -291,6 +291,7 @@ p {
 nav {
   font-size: 16px;
   text-align: center;
+  padding: 1em 0;
 }
 
 a {
