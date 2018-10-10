@@ -140,3 +140,105 @@ So far, your project should resemble the following:
 
 </details>
 
+### Footer Section
+
+17. The footer section is simple.  Just add a paragraph that reads: Get in touch! and follow it with a `nav`.
+18. Inside the `nav`, create an anchor tag for an email address (you can make a fake one if you're concerned about privacy) and one other for your linkedin page.
+
+<details>
+  <summary><strong>GET A HINT</strong></summary>
+  
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+</head>
+<body>
+  <header>
+    <h1>Your Headline Here</h1>
+    <p>Your introductory paragraph should go here</p>
+    <nav>
+      <a href="#work">work</a>
+      <a href="#hobbies">hobbies</a>
+      <a href="#gallery">gallery</a>
+    </nav>
+  </header>
+  <main>
+    <section id="work">
+      <div>
+        <h2>Your Work Heading</h2>
+        <p>A paragraph about what you do.</p>
+      </div>
+    </section>
+    <section id="hobbies">
+      <div>
+        <h2>Your Hobbies Heading</h2>
+        <p>A paragraph introducing your hobbies.</p>
+        <ul>
+          <li>Hobby</li>
+          <li>Hobby</li>
+        </ul>
+      </div>
+    </section>
+    <section id="gallery">
+      <img src="images/image1.jpg">
+      <img src="images/image2.jpg">
+      <img src="images/image3.jpg">
+      <img src="images/image4.jpg">
+      <img src="images/image5.jpg">
+    </section>
+  </main>
+  <footer>
+    <p>Get in touch!</p>
+    <nav>
+      <a href="https://www.linkedin.com/in/jenniferannmeade/">Linkedin</a>
+      <a href="mailto:fake-email@gmail.com">Email</a>
+    </nav>
+  </footer>
+</body>
+</html>
+```
+
+</details>
+
+## STYLING YOUR WEBSITE
+
+19. Create your `styles.css` file in your `css` folder and link it to your `index.html`.
+21. Go to [fonts.google.com](https://fonts.google.com/), search for and add the Raleway font in the weights of 200, 500, and 900.
+
+<details>
+  <summary>GET A HINT</summary>
+  
+  > Either choose, File > New file then File > Save As and make sure you save the file in the css folder or right-click on the css folder and choose New file.  In VS Code, you can just click the file with a plus icon next to the file name in the project area.
+  
+  > Go to [fonts.google.com](https://fonts.google.com/), choose the Raleway font.  Click the plus sign, then in the pop-up click on the tab for **CUSTOMIZE** and select the font weights: 200, 500, and 900.  Click back to the **EMBED** tag and copy the link tag and paste it *before* your styles.css file.
+  
+  ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,500,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+  ```
+</details>
+
+22. Inside your `styles.css` file, add the universal 
+
+<details>
+  <summary>GET A HINT</summary>
+  
+  > Either choose, File > New file then File > Save As and make sure you save the file in the css folder or right-click on the css folder and choose New file.  In VS Code, you can just click the file with a plus icon next to the file name in the project area.
+  
+  ```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+  ```
+</details>
+
