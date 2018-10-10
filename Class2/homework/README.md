@@ -208,7 +208,7 @@ So far, your project should resemble the following:
 20. Go to [fonts.google.com](https://fonts.google.com/), search for and add the Raleway font in the weights of 200, 500, and 900.
 
 <details>
-  <summary>GET A HINT</summary>
+  <summary><strong>GET A HINT</strong></summary>
   
   > Either choose, File > New file then File > Save As and make sure you save the file in the css folder or right-click on the css folder and choose New file.  In VS Code, you can just click the file with a plus icon next to the file name in the project area.
   
@@ -223,12 +223,13 @@ So far, your project should resemble the following:
   <link rel="stylesheet" href="css/styles.css">
 </head>
   ```
-</details>
+</details><br>
+
 
 21. Inside your `styles.css` file, add the universal selector and set the box-sizing to border-box and remove all of the margins. 
 
 <details>
-  <summary>GET A HINT</summary>
+  <summary><strong>GET A HINT</strong></summary>
  
   ```css
   
@@ -237,7 +238,8 @@ So far, your project should resemble the following:
     box-sizing: border-box;
   }
   ```
-</details>
+</details><br>
+
 
 22. We're going to set some base styles that will apply to the whole page.  That means we want to use the html element as the selector. 
 - Set the page background to #343434.
@@ -248,7 +250,7 @@ So far, your project should resemble the following:
 - Give our page smooth scrolling.
 
 <details>
-  <summary>GET A HINT</summary>
+  <summary><strong>GET A HINT</strong></summary>
  
   ```css
 html {
@@ -260,7 +262,8 @@ html {
   font-size: 24px;
 }
   ```
-</details>
+</details><br>
+
 
 23. Next let's tackle the header styles.
 - Give the header 40px of padding.
@@ -270,7 +273,7 @@ html {
 - Finally, to style our links, change the color to white.  Add 20px of margin and padding. Transform the case to uppercase. Remove the underline.  Add a 1px solid border.
 
 <details>
-  <summary>GET A HINT</summary>
+  <summary><strong>GET A HINT</strong></summary>
  
   ```css
 header {
@@ -299,7 +302,8 @@ a {
   border: 1px solid white;
 }
   ```
-</details>
+</details><br>
+
 
 24. Next we'll handle the styles for the main section.
 - Give the work section a background-color of #16b1b5, padding of 40px and set the font color to white.  We also need to set the column-count on this one to 2 columns.
@@ -309,7 +313,7 @@ a {
 - Lastly, to keep our images in check, we need to set them to width 100%.  Also, if you want to remove the space below each image, you can add a property to the img of `display: block;`.  We'll be talking about this next week.
 
 <details>
-  <summary>GET A HINT</summary>
+  <summary><strong>GET A HINT</strong></summary>
  
   ```css
 #work {
@@ -338,18 +342,19 @@ img {
   display: block;
 }
   ```
-</details>
+</details><br>
+
 
 25. Now all that is left is the footer.
 - Set the footer to center its text (inline) elements. The nav is already receiving the styles from the nav in the header!
 
 <details>
-  <summary>GET A HINT</summary>
+  <summary><strong>GET A HINT</strong></summary>
  
   ```css
 footer {
   text-align: center.
 }
   ```
-</details>
+</details><br>
 
