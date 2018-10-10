@@ -205,7 +205,7 @@ So far, your project should resemble the following:
 ## STYLING YOUR WEBSITE
 
 19. Create your `styles.css` file in your `css` folder and link it to your `index.html`.
-21. Go to [fonts.google.com](https://fonts.google.com/), search for and add the Raleway font in the weights of 200, 500, and 900.
+20. Go to [fonts.google.com](https://fonts.google.com/), search for and add the Raleway font in the weights of 200, 500, and 900.
 
 <details>
   <summary>GET A HINT</summary>
@@ -225,7 +225,7 @@ So far, your project should resemble the following:
   ```
 </details>
 
-22. Inside your `styles.css` file, add the universal selector and set the box-sizing to border-box and remove all of the margins. 
+21. Inside your `styles.css` file, add the universal selector and set the box-sizing to border-box and remove all of the margins. 
 
 <details>
   <summary>GET A HINT</summary>
@@ -239,7 +239,7 @@ So far, your project should resemble the following:
   ```
 </details>
 
-23. We're going to set some base styles that will apply to the whole page.  That means we want to use the html element as the selector. 
+22. We're going to set some base styles that will apply to the whole page.  That means we want to use the html element as the selector. 
 - Set the page background to #343434.
 - Set the color of the font to #16b1b5.
 - Set the font family for the page to 'Raleway', sans-serif.
@@ -262,7 +262,7 @@ html {
   ```
 </details>
 
-24. Next let's tackle the header styles.
+23. Next let's tackle the header styles.
 - Give the header 40px of padding.
 - Set the line-height for your headline to .8.
 - We need to add some margin back to the top and bottom of the p tags since we removed all margins. Add 1em of padding to the top and bottom of the paragraphs.
@@ -301,7 +301,7 @@ a {
   ```
 </details>
 
-25. Next we'll handle the styles for the main section.
+24. Next we'll handle the styles for the main section.
 - Give the work section a background-color of #16b1b5, padding of 40px and set the font color to white.  We also need to set the column-count on this one to 2 columns.
 - The hobbies section needs padding of 40px too. 
 - Our gallery is going to get a column count of 3 and we're going to remove the column gap by setting it to 0.  Set the background color on the gallery to #16b1b5 like the work section.
@@ -340,7 +340,7 @@ img {
   ```
 </details>
 
-26. Now all that is left is the footer.
+25. Now all that is left is the footer.
 - Set the footer to center its text (inline) elements. The nav is already receiving the styles from the nav in the header!
 
 <details>
