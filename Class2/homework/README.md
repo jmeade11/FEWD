@@ -301,11 +301,12 @@ a {
   ```
 </details>
 
-24. Next we'll handle the styles for the main section.
+25. Next we'll handle the styles for the main section.
 - Give the work section a background-color of #16b1b5, padding of 40px and set the font color to white.  We also need to set the column-count on this one to 2 columns.
 - The hobbies section needs padding of 40px too. 
 - Our gallery is going to get a column count of 3 and we're going to remove the column gap by setting it to 0.  Set the background color on the gallery to #16b1b5 like the work section.
 - We used divs to wrap our column contents so that we can use the special break-inside: avoid, to keep the div contents together in one column.
+- Lastly, to keep our images in check, we need to set them to width 100%.  Also, if you want to remove the space below each image, you can add a property to the img of `display: block;`.  We'll be talking about this next week.
 
 <details>
   <summary>GET A HINT</summary>
@@ -326,6 +327,28 @@ a {
   column-count:3;
   column-gap: 0;
   background-color: #16b1b5;
+}
+
+div {
+  break-inside: avoid;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+  ```
+</details>
+
+26. Now all that is left is the footer.
+- Set the footer to center its text (inline) elements. The nav is already receiving the styles from the nav in the header!
+
+<details>
+  <summary>GET A HINT</summary>
+ 
+  ```css
+footer {
+  text-align: center.
 }
   ```
 </details>
