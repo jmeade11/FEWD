@@ -1,119 +1,125 @@
-@import url('https://fonts.googleapis.com/css?family=Slabo+13px|Mr+Dafoe');
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 html {
-  font-family: "Slabo 13px";
-  color: rgba(255,255,255,.85);
+  font-family: 'Slabo 13px', serif;
+  /* Adjusted font-size from 24px to
+     20px (looked better to me. Decide
+     for yourself which is better) */
+  font-size: 20px;
   scroll-behavior: smooth;
 }
 
+/* Header Styles */
+
 header {
-  background: url(../images/bounty20-logo.svg), url(../images/sandwich.jpg);
+  height: 100vh;
+  background-image: url(../images/bounty20-logo.svg), url(../images/sandwich.jpg);
   background-size: 50%, cover;
   background-repeat: no-repeat;
   background-position: 50% 95%, center;
   background-attachment: scroll, fixed;
-  height: 100vh;
 }
 
 nav {
-  text-align: center;
-  padding: 1em 0;
-  background-color: #e09d34;
-  text-shadow: 1px 1px 0px rgba(0,0,0,.25);
-}
-
-.brand {
+  background-color: rgb(224,157,52);
   padding: 1em;
-  margin: 0 .25em;
-  font-family: 'Mr Dafoe';
-  cursor: pointer;
+  text-align: center;
 }
 
 a {
-  background-color: transparent;
   color: rgba(255,255,255,.85);
-  text-transform: uppercase;
-  padding: 1em;
-  margin: 0 .25em;
-  outline: none;
   text-decoration: none;
-  border-bottom: 3px solid transparent;
+  margin: 0 1em;
+  /* Add text-shadow */
+  /* Let's amp up the anchor tags
+     with some text shadow! The values
+     it takes are:
+     [x-offset] [y-offset] [blur] [color] */
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+  /* Add font-weight: bold; */
+  font-weight: bold;
 }
 
-a:hover {
-  border-bottom-color: #45001d;
-}
+/* Menu Styles */
 
 main {
-  background: #45001d;
-  border-top: #e09d34 2rem solid;
-  padding: 2rem;
+  background-color: rgb(69,0,29);
+  color: rgba(255,255,255,.85);
+  border-top: 2rem rgb(224,157,52) solid;
+  padding: 2em;
 }
 
 h1 {
-  font-family: 'Mr Dafoe';
-  color: #793348;
-  font-size: 5em;
+  font-family: 'Mr Dafoe', cursive;
   text-align: center;
-  text-shadow: 1px 1px 0px rgba(0,0,0,.25);
-  margin: 2rem;
+  /* Add margin top and bottom */
+  /* Since we removed all of the
+     default margins, we can add margin
+     to elements according to our needs. */
+  margin: 1rem 0;
+  /* Add font-size */
+  /* To bump up the size of the h1, I'll
+     use em, but I could use rem as well
+     since font-size is always set according
+     to the size of the base font size. */
+  font-size: 4em;
+}
+
+h1, .calories {
+  color: rgb(121,51,72);
 }
 
 section {
   column-count: 2;
   column-gap: 2em;
-  max-width: 700px;
+  /* Add max-width */
+  /* This will keep the menu
+     from becoming too wide on
+     larger monitors */
+  max-width: 800px;
+  /* Add margin: 0 auto; */
+  /* The auto value horizontally
+     centers the section in main */
   margin: 0 auto;
 }
 
 div {
   break-inside: avoid;
-  margin-bottom: 2em;
 }
 
-.price {
-  float: right;
-  color: #e09d34;
-}
-
-.calories {
-  color: #793348;
-}
+/* Add styles for p */
+/* Since we removed the default
+   margins from every element
+   we'll add some back to the
+   top and bottom of paragraphs */
 
 p {
-  margin: .75em 0;
+  margin: 1em 0;
 }
+
+
+.price {
+  color: rgb(224,157,52);
+  float: right;
+}
+
+/* Footer Styles */
 
 footer {
-  background-color: #e09d34;
-  color: #45001d;
-  text-align: center;
-  padding: 1em 1em 0;
+  background-color: rgb(224,157,52);
+  column-count: 2;
+  padding: 2em;
 }
 
+/* Remove the default styling from the
+   address */
 address {
   font-style: normal;
-  break-inside: avoid;
 }
 
-a[href^="mailto:"] {
-  background-color: #45001d;
-  color: #e09d34;
-  padding: 2px .5em;
-  margin: 0;
-}
-
-.logo {
-  width: 50%;
-  margin: 2em;
-}
-
-iframe {
-  margin: 2em -2em 0;
-  width: 100vw;
+img {
+  width: 100%;
 }
