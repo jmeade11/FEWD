@@ -82,7 +82,7 @@ So far, your project should resemble the following:
 
 ### Main Section
 
-11. Our main content needs to be broken down into 3 sections, each with an corresponding to the links above.  Use an appropriate tag for each *section* :wink:.
+11. Our main content needs to be broken down into 3 sections, each with an id corresponding to the links above.  Use an appropriate tag for each *section* :wink:.
 12. Inside the work section, add your *heading* (this should be smaller than the one used previously for your headline), followed by the *paragraph* you wrote about what you do for work.
 13. You'll want to wrap the heading and the paragraph in the section with a `div` so that you can set it in columns later.
 14. Add an image that represents you at work.  This could be a logo from your company website.  Do you remember how to get an image from a website with the right-click?
