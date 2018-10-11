@@ -86,8 +86,8 @@ So far, your project should resemble the following:
 12. Inside the work section, add your *heading* (this should be smaller than the one used previously for your headline), followed by the *paragraph* you wrote about what you do for work.
 13. You'll want to wrap this heading and paragraph inside a single `div` so that you can set the work section in columns later and keep these elements together in one column.
 14. Add an image that represents you at work.  This could be a logo from your company website.  Do you remember how to get an image from a website with the right-click?
-15. Do the same for the hobbies section, adding a heading, intro paragraph and a list of your hobbies.  Remember to wrap them all in a `div.
-16. Finally, use what you learned today about adding content images with the `img` tag and insert all of your pictures into the gallery section.
+15. Do the same for the hobbies section, adding a heading, intro paragraph and a list of your hobbies.  Remember to wrap them all in a `div`.
+16. Finally, use what you learned about adding content images with the `img` tag and insert all of your pictures into the gallery section.
 
 <details>
   <summary><strong>GET A HINT</strong></summary>
