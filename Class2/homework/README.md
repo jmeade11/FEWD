@@ -50,7 +50,7 @@ So far, your project should resemble the following:
 
 7. Add your headline to the `header` section and wrap it in an appropriate tag (you'll want this to be the largest one on the page).
 8. Add your introductory paragraph to the `header` (it's a paragraph, so use the appropriate tag). 
-9. Add your `nav` tags next also in the header.
+9. Next, add your `nav` tags in the header.
 10. Inside the `nav`, add an anchor tag for each of our main sections: work, hobbies, gallery.  We'll be using ids with the same names, so go ahead and add the href attributes for them (remember that the name of the id is preceeded by a `#`).  
 
 <details>
