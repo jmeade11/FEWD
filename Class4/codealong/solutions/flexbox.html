@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floats</title>
+    <style>
+      html, body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        min-height:100vh;
+        display: flex;
+        flex-direction: row;
+        /* We can accomplish our layout with flex-wrap and setting the width of the elements inside */
+        flex-wrap: wrap;
+      }
+      header {
+        background-color: turquoise;
+        padding: 1rem;
+        /* Setting the header to 100% forces the following elements to wrap on to the next line */
+        width: 100%;
+      }
+      main {
+        background-color: coral;
+        padding: 1rem;
+        /* With the elements set to wrap, we can add a gap, but we need to remove the margin from the width calculation just like in our float example or we can use flex-grow set to 1 and no width value!  Flex-grow will allow this element to 'grow' in order to fit the remaining space on the main axis. */
+        margin-right: 1rem;
+        flex-grow: 1;
+      }
+      aside {
+        background-color: yellowgreen;
+        padding: 1rem;
+        width: 30%;
+      }
+      footer {
+        background-color: hotpink;
+        padding: 1rem;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      header
+    </header>
+      <main>
+        main
+      </main>
+      <aside>
+        aside
+      </aside>
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>

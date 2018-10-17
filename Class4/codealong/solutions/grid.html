@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid</title>
+    <style>
+      html, body {
+        margin: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: grid;
+        /* You can omit the names for the lines in the brackets
+        and simply refer to the line numbers (in this case 1, 2, or 3 */
+        grid-template-columns: [start] 3fr [middle] 1fr [end];
+        /* For grid-template-rows, auto means expand to be as tall
+        as the contents inside the row.  The minmax() value means
+        be at least as tall as the first value but no taller than
+        the second value */
+        grid-template-rows: 5vh auto minmax(10vh, 20vh);
+        /* For grid, we can add a gutter between our columns or rows with grid-gap.  It takes only two values. The first controls the gap between rows and the second controls the gap between columns */
+        grid-gap: 0 1rem;
+        grid-template-areas:
+          "header header"
+          "main aside"
+          "footer footer";
+      }
+      header {
+        /* If you're using grid-column, you either give the
+        name or number of the line to start at followed by
+        a forward slash (/) followed by the line name
+        or number to end at.
+        You can also use the keyword 'span' plus the total
+        number of columns the element should span. */
+        grid-column: start / end;
+        /* is the same as: grid-column: 1 / 3 or
+        grid-column: 1 / span 2 */
+        background-color: turquoise;
+        padding: 1rem;
+      }
+      main {
+        /* An alternative to grid-column is grid-area.
+        Grid-area can only be used if you create the
+        grid-area-template in your grid definition. */
+        grid-area: main;
+        background-color: coral;
+        padding: 1rem;
+      }
+      aside {
+        grid-area: aside;
+        background-color: yellowgreen;
+        padding: 1rem;
+      }
+      footer {
+        grid-area: footer;
+        background-color: hotpink;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      header
+    </header>
+    <main>
+      main
+      <article></article>
+    </main>
+    <aside>
+      aside
+    </aside>
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>

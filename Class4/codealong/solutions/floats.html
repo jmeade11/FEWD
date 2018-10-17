@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floats</title>
+    <style>
+      * {
+        /* Floats will break if the contents are too big to fit next to one another so don't forget to add box-sizing! */
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+      }
+      header {
+        background-color: turquoise;
+        padding: 1rem;
+      }
+      main {
+        background-color: coral;
+        padding: 1rem;
+        float: left;
+        /*To add a gap between the columns, we can used margin, but we need to subtract the margin from the width with calc() */
+        margin-right: 1rem;
+        width: calc(70% - 1rem);
+      }
+      aside {
+        background-color: yellowgreen;
+        padding: 1rem;
+        float: left;
+        width: 30%;
+      }
+      footer {
+        background-color: hotpink;
+        padding: 1rem;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      header
+    </header>
+    <main>
+      main
+    </main>
+    <aside>
+      aside
+    </aside>
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>
