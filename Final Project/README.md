@@ -5,9 +5,9 @@
 
 ### Description
 
-For the final project, you'll be designing and building a website of your choice. This project will test your knowledge of front-end web development and ask you to apply everything you've learned in this course. The result will be a website that you can add to your portfolio.  You could create: a portfolio website; a marketing website for a startup or business; or a prototype for a simple web-app. Work with your instructor and EIR's to create project goals that are realistic given the scope and timing of the class.
+For the final project, you'll be designing and building a website of your choice. This project will test your knowledge of front-end web development and ask you to apply everything you've learned in this course. The result will be a website that you can add to your portfolio.  You could create: a portfolio website; a marketing website for a startup or business; or a prototype for a simple web-app. I'll help you to create project goals that are realistic given the scope and timing of the class.
 
-We recommend you take a look at the [GA Gallery](http:/gallery.ga.co) for examples of past student work.
+Take a look at the [GA Gallery](http:/gallery.ga.co) for examples of past student work.
 
 
 
@@ -21,9 +21,8 @@ We recommend you take a look at the [GA Gallery](http:/gallery.ga.co) for exampl
   - Structure, design, and style your site with HTML and CSS
   - Use JavaScript and jQuery to make your site interactive
   - Combine technical and design skills to create a responsive website that is compatible with mobile devices
-
-- Apply knowledge gained during this course by building a website from scratch
-- Use your creativity - instructors will validate feasibility and manage scope
+  - Apply knowledge gained during this course by building a website from scratch
+  - Use your creativity! I'll help you validate feasibility and manage scope
 
 
 <br>
@@ -47,14 +46,14 @@ We recommend you take a look at the [GA Gallery](http:/gallery.ga.co) for exampl
 
 - Use CSS to style the page:
   - Apply fonts, color and styles to elements and the page
-  - Demonstrate use of floats (or inline-block) and the box model
+  - Demonstrate your comprehension of layout techniques
 
 - Use JavaScript/jQuery to make pages interactive
 
 
 #### Bonus / Best Practices
 
-Your instructional team will provide feedback on how well you execute best practices. Even though it is not part of the requirements, you should keep these in mind:
+You will get feedback on how well you execute best practices. Even though it is not part of the requirements, you should keep these in mind:
 
 - __Clean And Readable Code__. The instructional team should be able to read and follow your code easily.  Maintain clean and readable code including: consistent indentation, code commenting (e.g. when closing `<div>` tags, demarcating sections of code, describing possibly ambiguous code choices) and use of proper and consistent naming conventions.
 
@@ -80,7 +79,7 @@ Your instructional team will provide feedback on how well you execute best pract
 
 ## Hosting
 
-You can host your final project on the web for free using GitHub pages. Watch [this video](https://generalassembly.wistia.com/medias/jn23v1hc93) and see [this](Getting_Started_with_GitHub_Pages.pdf) guide for more information on how to host your site on GitHub pages. If you run into any problems with GitHub pages, your instructor and TA(s) should be able to help you troubleshoot.
+You can host your final project on the web for free using [GitHub pages](https://generalassembly.wistia.com/medias/jn23v1hc93). For more information on GitHub, review the class materials on this topic and check out the wiki on this repository. If you run into any problems with GitHub pages, let me know and together we'll get things working.
 
 ### Resources
 
