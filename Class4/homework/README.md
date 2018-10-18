@@ -37,17 +37,17 @@ Gutter: 1em <br>
 
 #### Images
 
-[Relaxr Logo White](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/relaxr-logo-yellow.svg)
+[Relaxr Logo White](relaxr-images/relaxr-logo-yellow.svg)
 
-[Relaxr Logo Yellow](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/relaxr-logo-white.svg)
+[Relaxr Logo Yellow](relaxr-images/relaxr-logo-white.svg)
 
 [Blog Photo 1](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/blog_photo1.jpg)
 
 [Blog Photo 2](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/blog_photo2.jpg)
 
-[Facebook Icon](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/facebook.svg)
+[Facebook Icon](relaxr-images/facebook.svg)
 
-[Twitter Icon](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/twitter.svg)
+[Twitter Icon](relaxr-images/twitter.svg)
 
 
 #### Styles
