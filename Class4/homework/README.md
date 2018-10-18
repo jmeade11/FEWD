@@ -52,9 +52,11 @@ Gutter: 1em <br>
 
 #### Styles
 
+##### Header
+
 Nav: Semibold, 1em;
 
----
+##### Main 
 
 Post Titles - 2em, semibold
 
@@ -71,9 +73,9 @@ Remember to wrap each post including it's heading, image and text in `<article>`
 
 To make your drop caps look up `::first-letter` on Google.  You'll need to use float here, so see if you can make it work!
 
----
-
 Read More - 1.1em semibold
+
+##### Sidebar
 
 Sidebar headers - 2em, extra bold
 
