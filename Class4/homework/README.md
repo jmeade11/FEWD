@@ -16,23 +16,40 @@ If you nailed the homework, CONGRATS!  Ready to do some more?  Check out the [Fl
 
 ### Design File Details
 
+#### Colors
+
 background color: #f0efef<br>
 yellow: #f9e42e<br>
 dark blue: #033048<br>
 light grey: #606161<br>
 almost black: #121212<br>
 
+#### Fonts
+
 Font: [Open Sans](https://fonts.google.com/?query=open+sans)
 Weight: 300 Light, 600 Semibold, 800 Extrabold
 
+#### Layout
+
+Main column width: 65% <br>
+Sidebar width: 35% <br>
+Gutter: 1em <br>
+
+#### Images
+
+
+
+
+#### Styles
+
 Nav: Semibold, 1em;
 
-Main column width: 65%
-Sidebar width: 35%
-Gutter: 1em
+---
 
 Post Titles - 2em, semibold
+
 "How I implemented Relaxr in 2 weeks and changed my life."
+
 "I traveled across the globe thanks to Relaxr’s Excel automation"
 
 Blog Text - Light 1.1em
@@ -40,8 +57,11 @@ Blog Text - Light 1.1em
 Here's some lorem ipsum you can use **or** if you have installed Emmet, you can simply type lorem and press the tab key:<br>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veritatis voluptas quibusdam eum, non quos itaque iure pariatur laboriosam excepturi vero.
 
-Remember to wrap these in `<article>` tags!
+Remember to wrap each post including it's heading, image and text in `<article>` tags!
+
 To make your drop caps look up `::first-letter` on Google.  You'll need to use float here, so see if you can make it work!
+
+---
 
 Read More - 1.1em semibold
 
@@ -49,15 +69,10 @@ Sidebar headers - 2em, extra bold
 
 Categories list - 1em, light
 
-Success stories
-
-Stats
-
-How tos
-
-Best of
-
-Business tips
+Success stories <br>
+Stats <br>
+How tos <br>
+Best of Business tips
 
 About text - 1em light
 
