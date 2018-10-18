@@ -16,14 +16,14 @@ If you nailed the homework, CONGRATS!  Ready to do some more?  Check out the [Fl
 
 ### Design File Details
 
-background color: #f0efef
-yellow: #f9e42e
-dark blue: #033048
-light grey: #606161
-almost black: #121212
+background color: #f0efef<br>
+yellow: #f9e42e<br>
+dark blue: #033048<br>
+light grey: #606161<br>
+almost black: #121212<br>
 
 Font: [Open Sans](https://fonts.google.com/?query=open+sans)
-Weight: Light, Semibold, Extrabold
+Weight: 300 Light, 600 Semibold, 800 Extrabold
 
 Nav: Semibold, 1em;
 
@@ -35,16 +35,16 @@ Post Titles - 2em, semibold
 "How I implemented Relaxr in 2 weeks and changed my life."
 "I traveled across the globe thanks to Relaxr’s Excel automation"
 
-Blog Text - Light 1.25em
+Blog Text - Light 1.1em
 
 Remember to wrap these in `<article>` tags!
 To make your drop caps look up `::first-letter` on Google.  You'll need to use float here, so see if you can make it work!
 
-Read More - 1.25em semibold
+Read More - 1.1em semibold
 
 Sidebar headers - 2em, extra bold
 
-Categories list - 1.25em, light
+Categories list - 1em, light
 
 Success stories
 
@@ -56,7 +56,7 @@ Best of
 
 Business tips
 
-About text - 1.25em light
+About text - 1em light
 
 Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.
 
