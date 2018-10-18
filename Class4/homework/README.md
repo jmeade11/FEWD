@@ -62,7 +62,7 @@ Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tinc
 
 Learn More - Semibold, 1.25em
 
-
+![Screenshot of Week 2 Homework](../../embedded-images/relaxr_blog.jpg)
 
 ### Helpful Hints
 
