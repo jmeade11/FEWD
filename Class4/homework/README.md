@@ -37,6 +37,9 @@ Post Titles - 2em, semibold
 
 Blog Text - Light 1.1em
 
+Here's some lorem ipsum you can use **or** if you have installed Emmet, you can simply type lorem and press the tab key:<br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veritatis voluptas quibusdam eum, non quos itaque iure pariatur laboriosam excepturi vero.
+
 Remember to wrap these in `<article>` tags!
 To make your drop caps look up `::first-letter` on Google.  You'll need to use float here, so see if you can make it work!
 
