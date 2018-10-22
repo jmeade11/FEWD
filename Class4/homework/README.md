@@ -37,9 +37,9 @@ Gutter: 1em <br>
 
 #### Images
 
-[Relaxr Logo White](relaxr-images/relaxr-logo-yellow.svg)
+[Relaxr Logo White](relaxr-images/relaxr-logo-white.svg)
 
-[Relaxr Logo Yellow](relaxr-images/relaxr-logo-white.svg)
+[Relaxr Logo Yellow](relaxr-images/relaxr-logo-yellow.svg)
 
 [Blog Photo 1](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/blog_photo1.jpg)
 
@@ -77,7 +77,7 @@ Read More - 1.1em semibold
 
 ##### Sidebar
 
-Sidebar headers - 2em, extra bold
+Sidebar headers - 1em, extra bold
 
 Categories list - 1em, light
 
