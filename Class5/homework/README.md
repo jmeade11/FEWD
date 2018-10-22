@@ -25,7 +25,6 @@ To download the images, follow the link for each image and then right-click on t
 [Blog Photo 2](https://raw.githubusercontent.com/jmeade11/FEWD/master/Class4/homework/relaxr-images/blog_photo2.jpg)<br>
 [Facebook Icon](relaxr-images/facebook.svg)<br>
 [Twitter Icon](relaxr-images/twitter.svg)<br>
-![Screenshot of Week 2 Homework](../../embedded-images/relaxr_blog.jpg)<br>
 
 2. Drag your project folder on to Atom to open it in the projects pane. 
 
@@ -454,3 +453,5 @@ section {
 }
 ```
 </details>
+
+![Screenshot of Week 2 Homework](../../embedded-images/relaxr_blog.jpg)<br>
