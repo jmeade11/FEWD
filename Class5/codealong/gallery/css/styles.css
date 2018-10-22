@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  column-count: 3;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  text-align: center;
+  padding: 2em;
+  outline: 2px solid;
+  outline-offset: -1em;
+  transition: opacity .6s ease-in-out;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
