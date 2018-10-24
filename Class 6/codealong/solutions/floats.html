@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fluid Layout with Floats</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        color: #222;
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+      }
+      header {
+        background-color: #bbb;
+        padding: 1rem;
+        height: 10vh;
+      }
+      main {
+        background-color: #ddd;
+        padding: 1rem;
+        float: left;
+        width: calc(70%);
+        height: 70vh;
+      }
+      aside {
+        background-color:#ccc;
+        padding: 1rem;
+        float: left;
+        width: 30%;
+        height: 70vh;
+      }
+      footer {
+        background-color: #bbb;
+        padding: 1rem;
+        clear: both;
+        height: 20vh;
+      }
+      .small {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        main, aside {
+          width: 100%;
+        }
+        header, main, aside, footer {
+          height: 25%;
+        }
+        .small {
+          display: block;
+        }
+        .large {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+      <p>I'm always 100%.</p>
+    </header>
+    <main>
+      <h2>Main</h2>
+      <p class="small">I'm 100% on small screens.</p>
+      <p class="large">I'm 75% on larger screens.</p>
+    </main>
+    <aside>
+      <h2>Aside</h2>
+      <p class="small">I'm 100% on small screens.</p>
+      <p class="large">I'm 25% on larger screens.</p>
+    </aside>
+    <footer>
+      <h2>Footer</h2>
+      <p>I'm always 100%.</p>
+    </footer>
+  </body>
+</html>
