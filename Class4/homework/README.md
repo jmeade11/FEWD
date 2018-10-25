@@ -56,11 +56,11 @@ Gutter: 1em <br>
 
 Nav: Semibold, 1em;
 
-##### Main 
+##### Main
 
 Post Titles - 2em, semibold
 
-"How I implemented Relaxr in 2 weeks and changed my life."
+"How I implemented Relaxr in 2 weeks and changed my life"
 
 "I traveled across the globe thanks to Relaxr’s Excel automation"
 
@@ -81,10 +81,10 @@ Sidebar headers - 1em, extra bold
 
 Categories list - 1em, light
 
-Success stories <br>
+Success Stories <br>
 Stats <br>
-How tos <br>
-Best of Business tips
+How Tos <br>
+Best of Business Tips
 
 About text - 1em light
 

@@ -6,46 +6,66 @@
 
 ### Description
 
-You've got a good headstart on building the Startup Matchmaker website and making it responsive.  For your homework for Class 6, finish up the responsive features and make sure your site scales nicely for larger screen devices:
+This week we learned about pseudo classes, pseudo elements, positioning and responsive design.  Let's update our blog with what we've learned.
 
-1. Add two media queries:
 
-```css
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
+### BONUS
+
+Want to have a little fun?  After next week, we'll be focusing on the Javascript portion of our curriculum, let's get a headstart and make our menu slide into place or out of view when we click the menu toggle.
+
+To do this we need to add two new elements to our html page.  Both elements are `<script>` tags.  The first script tag is a link to the jQuery CDN.  You may remember when we talked about using Google Fonts, we discussed how CDNs (or Content Delivery Networks) were a network of super fast servers that deliver content to our users.
+
+Similar to how we need first load Google Fonts on our page in order to use them in our CSS, we need to load jQuery first before we can use it in our Javascript.  While the `link` tag is used to load external CSS files, the `script` tag is used to load external Javascript files.
+
+The `script` tag does double duty in that it can be used to both load an external Javascript file **or** wrap Javascript code on our html page (sort of like how we can write CSS directly in our HTML file if we wrap it in `style` tags).  The second `script` tag wraps our code that makes our toggle work.
+
+Here's the code you need to add to your page.  **Make sure to add it _after_ your closing `</footer>` tag and _before_ your closing `</body>` tag.**
+
+```html
+<!-- The closing footer tag should be above this comment -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script>
+    $('.menu-toggle').click(function(){
+
+      $('header nav').slideToggle();
+
+    });
+  </script>
+
+<!-- The closing body tag should be below this comment -->
 ```
 
-2. Make the div in the how section 75% in the mid-sized devices and 50% on the largest devices.
+Does it work?  Let's unpack what's happening here:
 
-3. Change the openings to be 3 items across on mid-sized devices and 4 items across on large devices.
+1. We load jQuery from the CDN source in the first script tag.  Once its loaded, we can use it in our scripts on the page, which is what we do in the second `script` tag.
 
-4. Make the logos in the startup section 3 across on mid-sized devices and 6 across on large devices.
+2. Inside the second `script` tag, we wrote a little script that uses jQuery to *listen* for clicks on the the element with the class of `menu-toggle`.  Whenever a click happens on the menu toggle, it runs the code inside the function.
 
-5. In the join section, make the form part be in a separate column on both mid-sized and large devices.
+3. The line inside the function goes into our page DOM and finds the element that matches our selector `header nav` and then uses the jQuery method called `slideToggle()` to cause the header nav to slide up and out of view if it is currently displayed, or slide down and into view if it is currently hidden.
 
-6. Use absolute positioning to place the footer logo in the bottom right corner on both mid-sized and large devices.
+If you watch the header nav element in the dev tools while clicking on the menu-toggle, you'll see that jQuery is just applying some inline styles to our header nav!  It uses those styles to animate our element and when it's done it makes sure that the element stays hidden by applying the style `display: none`.  You might notice that this can cause a problem if you collapse the menu and then make the window wider.  The menu disappears entirely!  That's because the style `display: none` is still applied to the element inline.  We can fix this though by just adding `!important` to the display rule in our CSS media query.  You might remember that this special keyword is the only way to override inline styles, which would normally have the highest specificity. Make sure you only add this rule to your media query so that you're only overriding the display property on larger devices.
 
-7. Add the menu and make it display or hide based on the device size!  Make sure the hamburger icon displays when the menu doesn't.
+```css
 
-BONUS:
+ \* Add the !important keyword to your header nav display property in the media query *\
 
-Can you change the base styles to use floats and use @supports for grid and / flexbox?
+   header nav {
+    position: static;
+    width: 50%;
+    display: flex !important; /* <-- Add it here */
+    justify-content: space-between;
+    float: right;
+    margin: 1.5rem 2rem;
+  }
 
----
+```
 
-## Hints
+Congratulations!  You just wrote some Javascript.  :tada:
 
-### Media Queries
 
-Remember that media queries cascade, so you need to add them **after** the normal styles!
 
-Also, remember that you only have to modify the properties that you want to change.  That means, you don't have to worry about copying the font or background colors, for example, into your media queries because we're only making changes to the layout.
-
----
-![](desktop-design.jpg)
----
 
 ### Resources
 

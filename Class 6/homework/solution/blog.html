@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit:no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Relaxr Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/relaxr-logo-white.svg" alt="Relaxr" class="logo">
+    <img src="images/toggle.svg" class="menu-toggle" alt="Menu">
+    <nav>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Team</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Blog</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>How I implemented Relaxr in 2 weeks and changed my life</h2>
+      <img src="images/blog_photo1.jpg" alt="Photo 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, natus omnis nihil delectus, corrupti repellat in beatae nisi. Laboriosam repudiandae rem magnam, impedit voluptate aliquid quos quod dignissimos eveniet voluptates?</p>
+      <a href="#">Read More ></a>
+    </article>
+    <article>
+      <h2>I traveled across the globe thanks to Relaxr’s Excel automation</h2>
+      <img src="images/blog_photo2.jpg" alt="Photo 2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, natus omnis nihil delectus, corrupti repellat in beatae nisi. Laboriosam repudiandae rem magnam, impedit voluptate aliquid quos quod dignissimos eveniet voluptates?</p>
+      <a href="#">Read More ></a>
+    </article>
+  </main>
+  <aside>
+    <h3>Categories</h3>
+    <nav>
+      <a href="#">Success Stories</a>
+      <a href="#">Stats</a>
+      <a href="#">How Tos</a>
+      <a href="#">Best of Business Tips</a>
+    </nav>
+    <h3>About Relaxr</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h3>Learn More</h3>
+    <div>
+      Ad Unit
+    </div>
+  </aside>
+  <section id="cta">
+    <button>
+      Sign Up Now!
+    </button>
+  </section>
+  <footer>
+    <img src="images/relaxr-logo-yellow.svg" alt="Relaxr Logo" class="logo">
+    <nav>
+      <a href="#">
+        <img src="images/twitter.svg" alt="Twitter">
+      </a>
+      <a href="#">
+        <img src="images/facebook.svg" alt="Facebook">
+      </a>
+    </nav>
+    <!--
+      Replaced the copyright using an ::after pseudo element in css
+
+      <p>&copy; 2018 Relaxr. All rights reserved.</p>
+    -->
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    $('.menu-toggle').click(function(){
+      $('header nav').slideToggle();
+    });
+  </script>
+</body>
+</html>
