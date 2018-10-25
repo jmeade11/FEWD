@@ -1,0 +1,165 @@
+/*
+background color: #f0efef
+yellow: #f9e42e
+dark blue: #033048
+light grey: #606161
+almost black: #121212
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0efef;
+  color: #606161;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "cta cta"
+    "footer footer";
+  grid-template-columns: calc(65% - 1rem) calc(35% - 1rem);
+  grid-column-gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #033048;
+}
+
+header {
+  background-color: #033048;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+}
+
+.logo {
+  height: 2rem;
+}
+
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #f9e42e;
+  font-weight: 600;
+}
+
+main {
+  grid-area: main;
+  padding-left: 2rem;
+}
+
+article {
+  margin: 1rem 0;
+}
+
+main h2 {
+  color: #033048;
+  font-size: 2em;
+}
+
+main img {
+  width: 100%;
+}
+
+main p {
+  font-size: 1.1em;
+}
+
+
+article p:first-of-type::first-letter {
+  font-size: 2rem;
+  font-weight: 800;
+  float: left;
+  margin-right: .25em;
+}
+
+article a {
+  display: block;
+  border-bottom: 1px solid;
+  text-align: right;
+  padding: 1rem 0;
+}
+
+aside {
+  grid-area: aside;
+  padding: 2rem 2rem 2rem 0;
+}
+
+
+aside h3,
+aside nav,
+aside p {
+  margin-bottom: 1rem;
+}
+aside nav a {
+  display: block;
+}
+
+aside div {
+  background: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem;
+  min-height: 30vh;
+}
+
+#cta {
+  grid-area: cta;
+  background-color: #f9e42e;
+  padding: 2rem;
+  text-align: center;
+}
+
+#cta button {
+  background: #033048;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-color: transparent;
+  border-radius: 8px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #033048;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer nav img {
+  height: 2rem;
+  margin: 1rem;
+}
+
+/*
+
+Replaced the copyright with the
+footer::after pseudo element below
+
+footer p {
+  color: white;
+}
+
+*/
+
+footer::after {
+  content: "© 2018 Relaxr. All rights reserved.";
+  color: white;
+  font-size: 90%;
+}
