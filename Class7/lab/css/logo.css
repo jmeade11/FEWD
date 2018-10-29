@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background: radial-gradient(farthest-corner at 50% 110%, #058f92, #1f3b6b 60%);
+  height: 100%;
+}
+body {
+  padding: 3rem;
+}
+
+#logo-animation {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[src$="rocket.svg"] {
+  height: 4rem;
+  margin-right: .5rem;
+  transform-origin: center top;
+}
+.text {
+  height: 1rem;
+}
+.smoke {
+  position: fixed;
+  bottom: -50%;
+  z-index: -1;
+  width: 100%;
+  transform-origin: center bottom;
+}
+
+@keyframes rocket-fly {
+  0% {
+    opacity: 0;
+    transform: translate(-2em,10em) rotateX(60deg) rotateY(60deg) scale(1);
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0,0) rotateX(-60deg) rotateY(0deg) scale(1,2);
+  }
+  100% {
+    transform: translate(0,0) rotateX(0deg) rotateY(0deg) scale(1);
+  }
+}
+
+/* Create a keyframe animation for the smoke
+  Make it start with opacity set to zero,
+  then change to opacity .1 and finish back on opacity 0.
+  Also scale the clouds at the beginning of the animation so
+  they are offscreen and end with a large scale so they
+  cover the entire screen.
+  Finally, add it to the smoke class.
+  As a bonus, change the delay and duration just for the
+  smoke image in the background.
+ */
