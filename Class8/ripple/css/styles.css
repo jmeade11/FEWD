@@ -1,0 +1,102 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,900";
+
+:root {
+ box-sizing: border-box;
+ --gradient: linear-gradient(rgba(207,0,99,.95), rgba(53,14,71,.95));
+ --primary: rgb(207,0,99);
+ --secondary: rgb(53,14,71);
+ --highlight: rgb(252,10,126);
+ --text-color: rgb(107,107,107);
+ font-family: 'Lato', sans-serif;
+ color: var(--text-color);
+ font-size: 20px;
+ scroll-behavior: smooth;
+}
+
+* {
+  margin:0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image:linear-gradient(135deg,var(--primary),var(--secondary));
+  color: white;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+#menu-toggle {
+  height: 3rem;
+  float: right;
+}
+
+nav {
+  clear:both;
+}
+
+.button {
+  background: var(--highlight);
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.caps-thin {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 90%;
+  color: var(--text-color);
+}
+
+#features {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#features img {
+  transform: rotate(-5deg);
+}
+
+#benefits {
+  text-align: center;
+  padding: 1rem;
+}
+
+#benefits img {
+  width: 100%;
+}
+
+#testimonials {
+  background: linear-gradient(135deg, #ffe5e7, #ff7d80);
+  padding: 1rem 1rem 0;
+  text-align: center;
+  color: var(--highlight);
+}
+
+#testimonials img {
+  display: block;
+  margin: auto;
+}
+
+#cta {
+  min-height: 50vh;
+  text-align: center;
+  padding: 1rem;
+  background-image: url(../images/wavy-bg.svg), linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+footer {
+  background-image: url(../images/wavy-bg.svg), linear-gradient(135deg, #222, #000);
+}
