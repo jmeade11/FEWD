@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Class Methods</title>
+  <style>
+    .red {color: red}
+  </style>
+</head>
+<body>
+  <p>Give this paragraph the <code>red</code> class</p>
+  <p class="red">Remove the class from this paragraph.</p>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+
+    //Use jQuery to add the red class to the paragraph that doesn't have it while removing it from the paragraph that does
+
+    $('p').toggleClass('red');
+
+  </script>
+</body>
+</html>

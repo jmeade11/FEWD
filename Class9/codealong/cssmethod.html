@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Method</title>
+</head>
+<body>
+  <p>Paragraph 1 content.</p>
+  <p>Paragraph 2 content.</p>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+
+    //Use jQuery to set an inline style on the first paragraph to make it red.
+
+    $('p:first-of-type').css('color', 'red');
+
+    //What other selectors could you use?
+
+    /* ANSWERS:
+
+    $('p:nth-child(1)')
+    $('p:nth-child(odd)')
+    $('p:first-child')
+    $('p:not(p+p)')
+
+    */
+
+  </script>
+</body>
+</html>
